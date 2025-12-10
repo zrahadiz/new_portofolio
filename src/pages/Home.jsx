@@ -1,6 +1,7 @@
-import Hero from "@/components/Hero";
-import WorkExperience from "@/components/WorkExperiences";
-import Projects from "@/components/Projects";
+import Hero from "@/components/sections/Hero";
+import WorkExperience from "@/components/sections/WorkExperiences";
+import Projects from "@/components/sections/Projects";
+import SkillsTools from "@/components/sections/SkillsTools";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <WorkExperience />
       <Projects />
+      <SkillsTools />
     </div>
   );
 }

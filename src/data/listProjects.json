@@ -55,6 +55,42 @@
           ]
         },
         {
+          "heading": "Contributors",
+          "contributors": [
+            {
+              "img": "developer1.png",
+              "name": "Rahadi Fauzan",
+              "role": "Fullstack Engineer",
+              "linkedin": "https://linkedin.com/in/example"
+            },
+            {
+              "img": "designer.png",
+              "name": "Sabila",
+              "role": "UI/UX Designer",
+              "linkedin": "https://linkedin.com/in/example2"
+            }
+          ]
+        },
+        {
+          "heading": "My Contribution",
+          "contributions": [
+            {
+              "label": "Frontend",
+              "tasks": [
+                "Built UI components",
+                "Integrated GraphQL"
+              ]
+            },
+            {
+              "label": "Backend",
+              "tasks": [
+                "Designed DB model",
+                "Created REST/GraphQL API"
+              ]
+            }
+          ]
+        },
+        {
           "heading": "The Challenge",
           "text": "The wrong people are too often placed on the wrong projects, creating misalignment, stalled progress, and unnecessary frustration across teams.",
           "list": [

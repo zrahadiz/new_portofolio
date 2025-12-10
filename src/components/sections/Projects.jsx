@@ -5,7 +5,8 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 
 import { projects } from "@/data/listProjects.json";
 import { Link } from "react-router-dom";
-import BookModal from "./BookModal";
+import BookModal from "@/components/BookModal";
+import CursorTooltip from "@/components/CursorTooltip";
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -135,73 +136,77 @@ export default function Projects() {
         {currentProjects.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentProjects.map((project) => (
-              <div
+              <CursorTooltip
                 key={project.id}
-                onClick={() => openProjectModal(project)}
-                className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition-all duration-300 cursor-pointer hover:transform hover:scale-105"
+                tooltip="Click to view project details"
               >
-                {/* Project Image */}
-                <div className="relative h-48 overflow-hidden bg-slate-700">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <Link
-                      href={project.link}
-                      className="btn btn-circle btn-sm bg-white text-slate-900 hover:bg-blue-500 hover:text-white"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <ExternalLink size={16} />
-                    </Link>
-                    <Link
-                      href={project.github}
-                      className="btn btn-circle btn-sm bg-white text-slate-900 hover:bg-purple-500 hover:text-white"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <SiGithub size={16} />
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Project Info */}
-                <div className="p-6">
-                  {/* Category Badge */}
-                  <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-medium rounded-full mb-3">
-                    {project.category}
-                  </span>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
-                    {project.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-gray-400 text-sm mb-4 leading-relaxed line-clamp-3">
-                    {project.description}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.slice(0, 8).map((tag, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-slate-700/50 text-gray-300 text-xs rounded-full border border-white/10"
+                <div
+                  onClick={() => openProjectModal(project)}
+                  className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition-all duration-300 cursor-pointer hover:transform hover:scale-105"
+                >
+                  {/* Project Image */}
+                  <div className="relative h-48 overflow-hidden bg-slate-700">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    {/* Overlay on hover */}
+                    <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                      <Link
+                        href={project.link}
+                        className="btn btn-circle btn-sm bg-white text-slate-900 hover:bg-blue-500 hover:text-white"
+                        onClick={(e) => e.preventDefault()}
                       >
-                        {tag}
-                      </span>
-                    ))}
+                        <ExternalLink size={16} />
+                      </Link>
+                      <Link
+                        href={project.github}
+                        className="btn btn-circle btn-sm bg-white text-slate-900 hover:bg-purple-500 hover:text-white"
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        <SiGithub size={16} />
+                      </Link>
+                    </div>
+                  </div>
 
-                    {project.tags.length > 8 && (
-                      <span className="px-3 py-1 bg-slate-700/50 text-gray-400 text-xs rounded-full border border-white/10">
-                        … {project.tags.length - 8} more
-                      </span>
-                    )}
+                  {/* Project Info */}
+                  <div className="p-6">
+                    {/* Category Badge */}
+                    <span className="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-medium rounded-full mb-3">
+                      {project.category}
+                    </span>
+
+                    {/* Title */}
+                    <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
+                      {project.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-gray-400 text-sm mb-4 leading-relaxed line-clamp-3">
+                      {project.description}
+                    </p>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.slice(0, 8).map((tag, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-slate-700/50 text-gray-300 text-xs rounded-full border border-white/10"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+
+                      {project.tags.length > 8 && (
+                        <span className="px-3 py-1 bg-slate-700/50 text-gray-400 text-xs rounded-full border border-white/10">
+                          … {project.tags.length - 8} more
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </CursorTooltip>
             ))}
           </div>
         ) : (

@@ -1,9 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, ExternalLink, Github } from "lucide-react";
-import ImageCarousel from "./ImageCarousel";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ExternalLink,
+  Github,
+  Linkedin,
+} from "lucide-react";
+import ImageCarousel from "@/components/ImageCarousel";
+import { Link } from "react-router-dom";
 
 export default function BookModal({ project, isOpen, onClose }) {
   const [currentPage, setCurrentPage] = useState(0);
+  const [imgErrors, setImgErrors] = useState(false);
+
+  const getInitials = (name = "") => {
+    return name
+      .split(" ")
+      .map((word) => word[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase();
+  };
 
   // Reset to first page when modal opens with new project
   useEffect(() => {
@@ -95,6 +112,78 @@ export default function BookModal({ project, isOpen, onClose }) {
                 className="bg-slate-700/50 rounded-lg p-3 border border-white/10"
               >
                 <p className="text-sm text-gray-300">{item}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Contributors */}
+        {page.contributors && page.contributors.length > 0 && (
+          <div className="space-y-3 mt-4">
+            {page.contributors.map((person, index) => (
+              <div
+                key={index}
+                className="flex items-center gap-4 bg-slate-800/40 p-4 rounded-xl border border-white/10"
+              >
+                {/* Avatar */}
+                {person.img && !imgErrors[index] ? (
+                  <img
+                    src={person.img}
+                    alt={person.name}
+                    className="w-12 h-12 rounded-full object-cover border border-white/10"
+                    onError={() =>
+                      setImgErrors((prev) => ({ ...prev, [index]: true }))
+                    }
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold text-lg border border-white/10">
+                    {getInitials(person.name)}
+                  </div>
+                )}
+
+                {/* Contributor Info */}
+                <div className="flex-1">
+                  <p className="font-semibold text-white">{person.name}</p>
+                  <p className="text-gray-400 text-sm">{person.role}</p>
+                </div>
+
+                {/* LinkedIn */}
+                {person.linkedin && (
+                  <Link
+                    to={person.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-500"
+                  >
+                    <Linkedin size={20} />
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* My Contribution */}
+        {page.contributions && page.contributions.length > 0 && (
+          <div className="space-y-4 mt-4">
+            {page.contributions.map((item, index) => (
+              <div
+                key={index}
+                className="p-4 bg-slate-800/40 border border-white/10 rounded-xl"
+              >
+                <p className="text-blue-400 font-semibold mb-2">{item.label}</p>
+
+                <ul className="space-y-1">
+                  {item.tasks.map((task, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-gray-300 text-sm"
+                    >
+                      <span className="text-purple-400 mt-1">•</span>
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>

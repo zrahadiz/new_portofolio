@@ -1,13 +1,4 @@
 import { useRef, useEffect } from "react";
-
-import {
-  motion,
-  useMotionValue,
-  useSpring,
-  useTransform,
-  animate,
-} from "framer-motion";
-
 import { Download, Play, Linkedin } from "lucide-react";
 
 import {
