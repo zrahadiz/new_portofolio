@@ -1,0 +1,48 @@
+{
+    "experiences": [
+        {
+            "year": "January 2024 - June 2025",
+            "role": "Junior Software Engineer",
+            "company": "PLN Icon Plus",
+            "description": "Leading design initiatives for enterprise SaaS products, conducting user research, and mentoring junior designers.",
+            "technologies": [
+                "Figma",
+                "Webflow",
+                "Adobe XD"
+            ]
+        },
+        {
+            "year": "March - September 2023",
+            "role": "Teaching Assistant",
+            "company": "Pacmann",
+            "description": "Designed responsive websites and mobile applications for various clients in e-commerce and fintech sectors.",
+            "technologies": [
+                "Shopify",
+                "Sketch",
+                "Prototyping"
+            ]
+        },
+        {
+            "year": "September - February 2023",
+            "role": "Engineering Specialist Intern",
+            "company": "BINUS University",
+            "description": "Collaborated with cross-functional teams to create user-centered designs and interactive prototypes.",
+            "technologies": [
+                "Figma",
+                "HTML/CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "year": "February - August 2022",
+            "role": "IT Support Engineer Intern",
+            "company": "PT. Boon Software",
+            "description": "Assisted in creating wireframes, mockups, and design systems for web and mobile applications.",
+            "technologies": [
+                "Adobe Suite",
+                "Wireframing",
+                "UI Design"
+            ]
+        }
+    ]
+}

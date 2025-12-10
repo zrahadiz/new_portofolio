@@ -1,0 +1,339 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "DevAlign",
+      "category": "Web App",
+      "description": "DevAlign is an AI-powered Human Resource Information System (HRIS) specifically designed to revolutionize IT project allocation in Indonesia's software industry. Built to address the critical challenge of high employee turnover (20-35% annually) caused by skill-role mismatches, DevAlign leverages artificial intelligence and data analytics to match the right people with the right projects.",
+      "image": "/src/assets/projects/devalign/devAlignLogo.png",
+      "tags": [
+        "ReactJS",
+        "ShadcnUI",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Bcrypt",
+        "Socket.io"
+      ],
+      "link": "https://www.devalign.site/",
+      "github": "https://github.com/zrahadiz/DevAlign/",
+      "pages": [
+        {
+          "type": "cover",
+          "subtitle": "HRIS for IT Project Allocation",
+          "tags": [
+            "ReactJS",
+            "ShadcnUI",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "Bcrypt",
+            "Socket.io"
+          ],
+          "image": "/src/assets/projects/devalign/devAlignLogo.png"
+        },
+        {
+          "heading": "Project Overview",
+          "text": "DevAlign is an AI-driven Human Resource Information System (HRIS) built to transform how IT projects are staffed within Indonesia’s software industry. Addressing the industry’s high annual turnover rate of 20–35%, largely driven by mismatches between employee skills and project requirements, DevAlign uses advanced AI and data analytics to ensure the right talent is placed on the right projects. The result is smarter allocation, stronger team performance, and a more sustainable workforce.",
+          "links": {
+            "live": "https://www.devalign.site/",
+            "github": "https://github.com/zrahadiz/DevAlign/"
+          },
+          "info": [
+            {
+              "label": "Client",
+              "value": "Personal Project"
+            },
+            {
+              "label": "Duration",
+              "value": "2 Weeks"
+            },
+            {
+              "label": "Role",
+              "value": "Full-Stack Developer"
+            }
+          ]
+        },
+        {
+          "heading": "The Challenge",
+          "text": "The wrong people are too often placed on the wrong projects, creating misalignment, stalled progress, and unnecessary frustration across teams.",
+          "list": [
+            "Misaligned Skills and Roles – Employees are assigned to projects that don’t match their true capabilities.",
+            "Inefficient Use of Talent – Resources are spread thin or underutilized due to guesswork-based allocation.",
+            "Increased Turnover & Costs – Poor project fit leads to disengagement, burnout, and higher replacement expenses."
+          ]
+        },
+        {
+          "heading": "The Solution",
+          "text": "We introduced an AI-powered HRIS that intelligently matches people to projects based on real data—skills, experience, certifications, and workload—ensuring every assignment is a strategic fit.",
+          "list": [
+            "AI-Generated Employee Profiles – Automatically track skills, tech stacks, certifications, achievements, and experience history.",
+            "Smart Project Matching Engine – Recommends or auto-assigns employees to projects using skill compatibility, availability, and workload balance.",
+            "Integrated Workflow Tools – Kanban boards and collaboration features streamline task visibility and team coordination."
+          ]
+        },
+        {
+          "heading": "Expected Impact",
+          "grid": [
+            "Increased project success rates through optimal skill–project matching",
+            "Higher employee satisfaction and reduced turnover",
+            "More efficient utilization of talent and time"
+          ]
+        },
+        {
+          "heading": "DevAlign Project",
+          "text": "Here are final UI designs and previews.",
+          "imgUrl": [
+            "src/assets/projects/devalign/devalign1.png",
+            "src/assets/projects/devalign/devalign2.png",
+            "src/assets/projects/devalign/devalign3.png",
+            "src/assets/projects/devalign/devalign4.png",
+            "src/assets/projects/devalign/devalign5.png",
+            "src/assets/projects/devalign/devalign6.png",
+            "src/assets/projects/devalign/devalign7.png",
+            "src/assets/projects/devalign/devalign8.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Dungeon and Dragons adventure",
+      "category": "Web App",
+      "description": "Dungeon and Dragons adventure is an online multiplayer D&D-style game where players create characters, join campaigns, and interact with an AI-powered Dungeon Master. Built with Next.js, Socket.IO, PostgreSQL, and Drizzle ORM, it delivers dynamic storytelling and synchronized real-time gameplay, with scalable deployment supported by Docker.",
+      "image": "src/assets/projects/dnd/dnd1.png",
+      "tags": [
+        "Next.JS",
+        "Drizzle ORM",
+        "Socket.IO",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "link": "#",
+      "github": "https://github.com/zrahadiz/DnDGames",
+      "pages": [
+        {
+          "type": "cover",
+          "subtitle": "Dungeon and Dragons Adventure",
+          "tags": [
+            "Next.JS",
+            "Drizzle ORM",
+            "Socket.IO",
+            "Docker",
+            "PostgreSQL"
+          ],
+          "image": "src/assets/projects/dnd/dnd1.png"
+        },
+        {
+          "heading": "Project Overview",
+          "text": "Dungeon and Dragons Adventure is an online multiplayer D&D-style game where players create characters, join campaigns, and interact with an AI-powered Dungeon Master. Built with Next.js, Socket.IO, PostgreSQL, and Drizzle ORM, it delivers dynamic storytelling and synchronized real-time gameplay, with scalable deployment supported by Docker.",
+          "links": {
+            "live": "Coming Soon",
+            "github": "https://github.com/zrahadiz/DnDGames"
+          },
+          "info": [
+            {
+              "label": "Client",
+              "value": "Personal Project"
+            },
+            {
+              "label": "Duration",
+              "value": "Ongoing"
+            },
+            {
+              "label": "Role",
+              "value": "Full-Stack Developer & Game System Designer"
+            }
+          ]
+        },
+        {
+          "heading": "Client Testimonial",
+          "testimonial": {
+            "text": "This is the closest experience to having a real Dungeon Master online. The AI storytelling feels natural, the multiplayer is smooth, and every session feels unique and unpredictable.",
+            "author": "Alex Mercer",
+            "position": "Beta Tester & RPG Enthusiast"
+          },
+          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
+        },
+        {
+          "heading": "Key Features",
+          "list": [
+            "AI-powered Dungeon Master for dynamic storytelling",
+            "Real-time multiplayer powered by Socket.IO",
+            "Custom character creation with classes, races, and abilities",
+            "Persistent campaign data stored in PostgreSQL",
+            "Dice-roll simulation and combat encounter system",
+            "Next.js modern interface with responsive design",
+            "Docker-based scalable server deployment",
+            "Party matchmaking and session management"
+          ]
+        },
+        {
+          "heading": "Results",
+          "grid": [
+            "Real-time multiplayer syncing up to 10 players",
+            "AI Dungeon Master capable of generating branching story scenarios",
+            "Stable and successful early playtest sessions",
+            "Modular architecture ready for future expansions"
+          ],
+          "links": {
+            "live": "Coming Soon",
+            "github": "https://github.com/zrahadiz/DnDGames"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Banking Dashboard",
+      "category": "UI/UX",
+      "description": "Intuitive banking dashboard with data visualization and transaction management.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "tags": [
+        "Figma",
+        "Design System",
+        "Charts"
+      ],
+      "link": "#",
+      "github": "#",
+      "pages": [
+        {
+          "type": "cover",
+          "subtitle": "SecureBank Ltd.",
+          "tags": [
+            "Figma",
+            "Design System",
+            "Charts"
+          ]
+        },
+        {
+          "heading": "Overview",
+          "text": "Redesigned the banking dashboard to provide users with better financial insights and streamlined transaction management.",
+          "info": [
+            {
+              "label": "Client",
+              "value": "SecureBank Ltd."
+            },
+            {
+              "label": "Duration",
+              "value": "5 months"
+            }
+          ]
+        },
+        {
+          "heading": "Results",
+          "grid": [
+            "70% reduction in support tickets",
+            "50% faster transaction processing",
+            "95% user satisfaction rate",
+            "Zero security incidents"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Brand Identity Suite",
+      "category": "Branding",
+      "description": "Complete brand identity including logo, color palette, and style guide.",
+      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
+      "tags": [
+        "Adobe XD",
+        "Illustrator",
+        "Branding"
+      ],
+      "link": "#",
+      "github": "#",
+      "pages": [
+        {
+          "type": "cover",
+          "subtitle": "TechStart Ventures",
+          "tags": [
+            "Adobe XD",
+            "Illustrator",
+            "Branding"
+          ]
+        },
+        {
+          "heading": "Deliverables",
+          "list": [
+            "Primary and secondary logos",
+            "Comprehensive color system",
+            "Typography guidelines",
+            "Icon library and illustrations",
+            "Print and digital templates",
+            "Brand voice and messaging guide"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Real Estate Website",
+      "category": "Web Design",
+      "description": "Property listing website with advanced search and virtual tours.",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+      "tags": [
+        "Webflow",
+        "CMS",
+        "SEO"
+      ],
+      "link": "#",
+      "github": "#",
+      "pages": [
+        {
+          "type": "cover",
+          "subtitle": "Prime Properties",
+          "tags": [
+            "Webflow",
+            "CMS",
+            "SEO"
+          ]
+        },
+        {
+          "heading": "Features",
+          "list": [
+            "Advanced property filtering",
+            "360° virtual tours",
+            "Interactive map search",
+            "Mortgage calculator"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Food Delivery App",
+      "category": "Mobile App",
+      "description": "Fast and reliable food ordering app with real-time tracking.",
+      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
+      "tags": [
+        "Flutter",
+        "Maps API",
+        "Payment"
+      ],
+      "link": "#",
+      "github": "#",
+      "pages": [
+        {
+          "type": "cover",
+          "subtitle": "QuickBite Delivery",
+          "tags": [
+            "Flutter",
+            "Maps API",
+            "Payment"
+          ]
+        },
+        {
+          "heading": "Key Features",
+          "list": [
+            "Real-time order tracking",
+            "Multiple payment methods",
+            "Restaurant ratings and reviews",
+            "Scheduled deliveries"
+          ]
+        }
+      ]
+    }
+  ]
+}
