@@ -5,7 +5,7 @@
       "title": "DevAlign",
       "category": "Web App",
       "description": "DevAlign is an AI-powered Human Resource Information System (HRIS) specifically designed to revolutionize IT project allocation in Indonesia's software industry. Built to address the critical challenge of high employee turnover (20-35% annually) caused by skill-role mismatches, DevAlign leverages artificial intelligence and data analytics to match the right people with the right projects.",
-      "image": "/src/assets/projects/devalign/devAlignLogo.png",
+      "image": "projects/devalign/devAlignLogo.png",
       "tags": [
         "ReactJS",
         "ShadcnUI",
@@ -30,7 +30,7 @@
             "Bcrypt",
             "Socket.io"
           ],
-          "image": "/src/assets/projects/devalign/devAlignLogo.png"
+          "image": "projects/devalign/devAlignLogo.png"
         },
         {
           "heading": "Project Overview",
@@ -138,14 +138,14 @@
           "heading": "DevAlign Project",
           "text": "Here are final UI designs and previews.",
           "imgUrl": [
-            "src/assets/projects/devalign/devalign1.png",
-            "src/assets/projects/devalign/devalign2.png",
-            "src/assets/projects/devalign/devalign3.png",
-            "src/assets/projects/devalign/devalign4.png",
-            "src/assets/projects/devalign/devalign5.png",
-            "src/assets/projects/devalign/devalign6.png",
-            "src/assets/projects/devalign/devalign7.png",
-            "src/assets/projects/devalign/devalign8.png"
+            "projects/devalign/devalign1.png",
+            "projects/devalign/devalign2.png",
+            "projects/devalign/devalign3.png",
+            "projects/devalign/devalign4.png",
+            "projects/devalign/devalign5.png",
+            "projects/devalign/devalign6.png",
+            "projects/devalign/devalign7.png",
+            "projects/devalign/devalign8.png"
           ]
         }
       ]
@@ -155,7 +155,7 @@
       "title": "Dungeon and Dragons adventure",
       "category": "Web App",
       "description": "Dungeon and Dragons adventure is an online multiplayer D&D-style game where players create characters, join campaigns, and interact with an AI-powered Dungeon Master. Built with Next.js, Socket.IO, PostgreSQL, and Drizzle ORM, it delivers dynamic storytelling and synchronized real-time gameplay, with scalable deployment supported by Docker.",
-      "image": "src/assets/projects/dnd/dnd1.png",
+      "image": "projects/dnd/dnd1.png",
       "tags": [
         "Next.JS",
         "Drizzle ORM",
@@ -176,7 +176,7 @@
             "Docker",
             "PostgreSQL"
           ],
-          "image": "src/assets/projects/dnd/dnd1.png"
+          "image": "projects/dnd/dnd1.png"
         },
         {
           "heading": "Project Overview",
@@ -247,9 +247,9 @@
           "heading": "DnD Adventure",
           "text": "Here are final UI designs and previews.",
           "imgUrl": [
-            "src/assets/projects/dnd/dnd1.png",
-            "src/assets/projects/dnd/dnd2.png",
-            "src/assets/projects/dnd/dnd3.png"
+            "projects/dnd/dnd1.png",
+            "projects/dnd/dnd2.png",
+            "projects/dnd/dnd3.png"
           ]
         }
       ]
@@ -284,7 +284,7 @@
             "Minio",
             "TailwindCSS"
           ],
-          "image": "src/assets/projects/dnd/dnd1.png"
+          "image": "projects/dnd/dnd1.png"
         },
         {
           "heading": "Overview",
@@ -365,9 +365,9 @@
           "heading": "TixPlaza",
           "text": "Here are final UI designs and previews.",
           "imgUrl": [
-            "src/assets/projects/dnd/dnd1.png",
-            "src/assets/projects/dnd/dnd2.png",
-            "src/assets/projects/dnd/dnd3.png"
+            "projects/dnd/dnd1.png",
+            "projects/dnd/dnd2.png",
+            "projects/dnd/dnd3.png"
           ]
         }
       ]
@@ -377,7 +377,7 @@
       "title": "Moo Nonton",
       "category": "Web App",
       "description": "Moo Nonton is a simple movie streaming website built as a practice project to revisit the fundamentals of front-end development. After frequently relying on TailwindCSS, this project was intentionally created to relearn and strengthen core CSS skills. Developed using React.js and vanilla CSS, it features movie listings from various genres and includes a wishlist system managed with Redux. This project was completed as part of the Web Development course at the Korean ASEAN Digital Academy.",
-      "image": "src/assets/projects/moononton/moononton2.png",
+      "image": "projects/moononton/moononton2.png",
       "tags": [
         "ReactJS",
         "Vannila CSS",
@@ -394,7 +394,7 @@
             "Vannila CSS",
             "Redux"
           ],
-          "image": "src/assets/projects/moononton/moononton2.png"
+          "image": "projects/moononton/moononton2.png"
         },
         {
           "heading": "Project Overview",
@@ -461,10 +461,10 @@
           "heading": "Moo Nonton",
           "text": "Here are final UI designs and previews.",
           "imgUrl": [
-            "src/assets/projects/moononton/moononton1.png",
-            "src/assets/projects/moononton/moononton2.png",
-            "src/assets/projects/moononton/moononton3.png",
-            "src/assets/projects/moononton/moononton4.png"
+            "projects/moononton/moononton1.png",
+            "projects/moononton/moononton2.png",
+            "projects/moononton/moononton3.png",
+            "projects/moononton/moononton4.png"
           ]
         }
       ]
@@ -474,7 +474,7 @@
       "title": "Math 4 Dumb",
       "category": "Web App",
       "description": "This web aims to help students from elementary school to high school in learning math easily and fun. Because, on this web the material will be presented interactively and students can create discussion threads when facing difficult material so that it can be answered by other users. This web is built with Vue.js and Tailwind for the front-end. Then, using Express.js as a backend endpoint and MySql for database storage where storage includes account storage, material bookmarks, and discussion posts. And account security has also used Bcrypt, JWT, and Cookies.",
-      "image": "src/assets/projects/mathdumb/mathdumb1.png",
+      "image": "projects/mathdumb/mathdumb1.png",
       "tags": [
         "Vue.js",
         "Tailwind",
@@ -498,7 +498,8 @@
             "Bcrypt",
             "Cookies",
             "MySql"
-          ]
+          ],
+          "image": "projects/mathdumb/mathdumb1.png"
         },
         {
           "heading": "Project Overview",
@@ -577,10 +578,10 @@
           "heading": "Moo Nonton",
           "text": "Here are final UI designs and previews.",
           "imgUrl": [
-            "src/assets/projects/mathdumb/mathdumb1.png",
-            "src/assets/projects/mathdumb/mathdumb2.png",
-            "src/assets/projects/mathdumb/mathdumb3.png",
-            "src/assets/projects/mathdumb/mathdumb4.png"
+            "projects/mathdumb/mathdumb1.png",
+            "projects/mathdumb/mathdumb2.png",
+            "projects/mathdumb/mathdumb3.png",
+            "projects/mathdumb/mathdumb4.png"
           ]
         }
       ]
@@ -590,7 +591,7 @@
       "title": "Restaurant Menu Display",
       "category": "IoT",
       "description": "A remote digital signage system for restaurants that allows branch managers to control and schedule menu displays. Using a Raspberry Pi 3 connected to the in-store monitor, the device fetches menu assets (images/videos) and display schedules stored in Firebase. Managers can upload and manage menu content through a web dashboard, and the Raspberry Pi periodically syncs every 5 minutes, ensuring updated content even if the device was offline.",
-      "image": "src/assets/projects/digisignage/digisignage1.png",
+      "image": "projects/digisignage/digisignage1.png",
       "tags": [
         "Raspberry Pi 3",
         "Vue.js",
@@ -612,7 +613,8 @@
             "Firebase",
             "Cron Jobs / Scheduled Tasks",
             "LibVLC"
-          ]
+          ],
+          "image": "projects/digisignage/digisignage1.png"
         },
         {
           "heading": "Project Overview",
@@ -718,13 +720,13 @@
           "heading": "Moo Nonton",
           "text": "Here are final UI designs and previews.",
           "imgUrl": [
-            "src/assets/projects/digisignage/digisignage1.png",
-            "src/assets/projects/digisignage/digisignage2.png",
-            "src/assets/projects/digisignage/digisignage3.png",
-            "src/assets/projects/digisignage/digisignage4.png",
-            "src/assets/projects/digisignage/digisignage5.png",
-            "src/assets/projects/digisignage/digisignage6.png",
-            "src/assets/projects/digisignage/digisignage7.png"
+            "projects/digisignage/digisignage1.png",
+            "projects/digisignage/digisignage2.png",
+            "projects/digisignage/digisignage3.png",
+            "projects/digisignage/digisignage4.png",
+            "projects/digisignage/digisignage5.png",
+            "projects/digisignage/digisignage6.png",
+            "projects/digisignage/digisignage7.png"
           ]
         }
       ]
