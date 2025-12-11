@@ -305,69 +305,112 @@ export default function BookModal({ project, isOpen, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fadeIn"
+      className="
+    fixed inset-0 z-50 flex items-center justify-center 
+    p-4 bg-black/80 backdrop-blur-sm animate-fadeIn
+  "
       onClick={onClose}
     >
       <div
-        className="relative max-w-6xl w-full"
+        className="relative w-full max-w-6xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute -top-12 right-0 btn btn-circle btn-ghost text-white hover:bg-white/10"
+          className="
+        absolute -top-12 right-0 
+        btn btn-circle btn-ghost text-white hover:bg-white/10
+      "
         >
           ✕
         </button>
 
         {/* Book Container */}
-        <div className="relative bg-slate-900 rounded-xl shadow-2xl overflow-hidden">
-          <div className="flex flex-col md:flex-row min-h-[600px]">
+        <div
+          className="
+      relative bg-slate-900 rounded-xl shadow-2xl overflow-hidden
+      max-h-[85vh] flex flex-col
+    "
+        >
+          <div
+            className="
+        flex flex-col md:flex-row 
+        h-full
+      "
+          >
             {/* Left Page */}
-            <div className="flex-1 bg-slate-800 p-8 md:p-12 border-r border-slate-700/50 overflow-y-auto max-h-[600px] relative">
-              {leftPage && leftPage.type === "cover" ? (
-                renderCoverPage()
-              ) : (
-                <>
-                  {renderPageContent(leftPage)}
-                  {/* Page number */}
-                  {leftPage && (
-                    <div className="absolute bottom-4 left-8 text-gray-500 text-sm">
-                      {leftPageIndex + 1}
-                    </div>
-                  )}
-                </>
+            <div
+              className="
+          flex-1 bg-slate-800 p-6 md:p-10 
+          border-b md:border-b-0 md:border-r border-slate-700/50 
+          overflow-y-auto
+          max-h-[40vh] md:max-h-[85vh]
+        "
+            >
+              {leftPage && leftPage.type === "cover"
+                ? renderCoverPage()
+                : renderPageContent(leftPage)}
+
+              {/* Page number */}
+              {leftPage && (
+                <div className="text-gray-500 text-xs mt-6 md:absolute md:bottom-4 md:left-8">
+                  {leftPageIndex + 1}
+                </div>
               )}
             </div>
 
             {/* Right Page */}
-            <div className="flex-1 bg-slate-800 p-8 md:p-12 overflow-y-auto max-h-[600px] relative">
+            <div
+              className="
+          flex-1 bg-slate-800 p-6 md:p-10 
+          overflow-y-auto 
+          max-h-[40vh] md:max-h-[85vh]
+        "
+            >
               {renderPageContent(rightPage)}
-              {/* Page number */}
+
               {rightPage && (
-                <div className="absolute bottom-4 right-8 text-gray-500 text-sm">
+                <div className="text-gray-500 text-xs mt-6 md:absolute md:bottom-4 md:right-8">
                   {rightPageIndex + 1}
                 </div>
               )}
             </div>
           </div>
 
-          {/* Navigation Buttons */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-4 items-center bg-slate-900/90 px-4 py-2 rounded-full backdrop-blur-sm">
+          {/* Navigation */}
+          <div
+            className="
+        sticky bottom-0 left-0 
+        flex items-center justify-center gap-4
+        bg-slate-900/90 backdrop-blur-sm
+        py-3 border-t border-white/10
+      "
+          >
             <button
               onClick={prevPage}
               disabled={currentPage === 0}
-              className="btn btn-circle btn-sm btn-ghost text-white hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed"
+              className="
+            btn btn-circle btn-sm btn-ghost 
+            text-white hover:bg-white/10 
+            disabled:opacity-30 disabled:cursor-not-allowed
+          "
             >
               <ChevronLeft size={20} />
             </button>
+
             <span className="text-white text-sm font-medium">
               {currentPage + 1} / {totalSpreads}
             </span>
+
             <button
               onClick={nextPage}
               disabled={currentPage === totalSpreads - 1}
-              className="btn btn-circle btn-sm btn-ghost text-white hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed"
+              className="
+            btn btn-circle btn-sm btn-ghost 
+            text-white hover:bg-white/10 
+            disabled:opacity-30 disabled:cursor-not-allowed
+          "
             >
               <ChevronRight size={20} />
             </button>
