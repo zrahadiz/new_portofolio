@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Briefcase, Calendar, Download } from "lucide-react";
 import { experiences } from "@/data/growthJourney";
 
-export default function WorkExperience() {
+export default function Journey() {
   const [currentExperience, setCurrentExperience] = useState(
     experiences.length - 1
   );
@@ -57,7 +57,7 @@ export default function WorkExperience() {
       : 50;
 
   return (
-    <section className=" px-8 text-white relative overflow-hidden">
+    <section className="px-8 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -4,7 +4,7 @@ import { skillCategories } from "@/data/skillsList.json";
 
 export default function SkillsTools() {
   return (
-    <section className="py-20 px-8  text-white relative overflow-hidden">
+    <section className="px-8 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-20 left-0 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -21,10 +21,8 @@ export default function SkillsTools() {
         </div>
 
         {/* Truck Animation Container */}
-        <div className="mb-12">
-          <div className="relative h-96 sm:h-[500px] md:h-[600px] rounded-3xl overflow-hidden border border-white/10">
-            <TruckCarousel skillCategories={skillCategories} />
-          </div>
+        <div className="relative h-96 sm:h-[500px] md:h-[600px] rounded-3xl overflow-hidden border border-white/10">
+          <TruckCarousel skillCategories={skillCategories} />
         </div>
       </div>
     </section>

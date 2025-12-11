@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ExternalLink, Search, ChevronRight, ChevronLeft } from "lucide-react";
 
 import { SiGithub } from "@icons-pack/react-simple-icons";
@@ -14,9 +14,11 @@ export default function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const projectsPerPage = 6;
 
-  const categories = ["All", "Web Design", "Mobile App", "UI/UX", "Branding"];
+  const categories = [
+    "All",
+    ...new Set(projects.map((project) => project.category)),
+  ];
 
   const filteredProjects = projects.filter((project) => {
     // Filter by category
@@ -34,6 +36,28 @@ export default function Projects() {
 
     return matchesCategory && matchesSearch;
   });
+
+  function useProjectsPerPage() {
+    const getValue = () => {
+      const w = window.innerWidth;
+      if (w < 768) return 1;
+      if (w < 640) return 3;
+      if (w < 1024) return 4;
+      return 6;
+    };
+
+    const [projectsPerPage, setProjectsPerPage] = useState(getValue);
+
+    useEffect(() => {
+      const handleResize = () => setProjectsPerPage(getValue());
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return projectsPerPage;
+  }
+
+  const projectsPerPage = useProjectsPerPage();
 
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -71,7 +95,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="px-8 pb-20 text-white relative overflow-hidden">
+    <section className="px-8 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">

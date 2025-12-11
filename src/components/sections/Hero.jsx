@@ -62,7 +62,7 @@ function Hero() {
   };
 
   return (
-    <div className="">
+    <div className="px-8 pt-36">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
@@ -70,7 +70,7 @@ function Hero() {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-8 pt-20 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto ">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">

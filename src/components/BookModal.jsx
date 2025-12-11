@@ -93,7 +93,7 @@ export default function BookModal({ project, isOpen, onClose }) {
 
         {/* List items */}
         {page.list && page.list.length > 0 && (
-          <ul className="space-y-2 mt-4">
+          <ul className="space-y-2 mt-4 max-h-11/12 overflow-y-auto pr-2">
             {page.list.map((item, index) => (
               <li key={index} className="flex items-start gap-2 text-gray-400">
                 <span className="text-blue-400 mt-1">•</span>
@@ -105,7 +105,7 @@ export default function BookModal({ project, isOpen, onClose }) {
 
         {/* Grid items (for results/metrics) */}
         {page.grid && page.grid.length > 0 && (
-          <div className="grid grid-cols-2 gap-3 mt-4">
+          <div className="grid grid-cols-2 gap-3 mt-4 max-h-11/12 overflow-y-auto pr-2">
             {page.grid.map((item, index) => (
               <div
                 key={index}
@@ -119,7 +119,7 @@ export default function BookModal({ project, isOpen, onClose }) {
 
         {/* Contributors */}
         {page.contributors && page.contributors.length > 0 && (
-          <div className="space-y-3 mt-4">
+          <div className="space-y-3 max-h-11/12 overflow-y-auto pr-2">
             {page.contributors.map((person, index) => (
               <div
                 key={index}
@@ -165,7 +165,7 @@ export default function BookModal({ project, isOpen, onClose }) {
 
         {/* My Contribution */}
         {page.contributions && page.contributions.length > 0 && (
-          <div className="space-y-4 mt-4">
+          <div className="space-y-4 max-h-11/12 overflow-y-auto pr-2">
             {page.contributions.map((item, index) => (
               <div
                 key={index}
@@ -222,7 +222,7 @@ export default function BookModal({ project, isOpen, onClose }) {
 
         {/* Info boxes (for client, duration, role) */}
         {page.info && page.info.length > 0 && (
-          <div className="space-y-3 mt-4">
+          <div className="space-y-3 mt-4 max-h-11/12 overflow-y-auto pr-2">
             {page.info.map((item, index) => (
               <div key={index}>
                 <h4 className="text-sm font-semibold text-blue-400 mb-1">

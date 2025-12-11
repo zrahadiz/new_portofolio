@@ -49,7 +49,7 @@
               "value": "2 Weeks"
             },
             {
-              "label": "Role",
+              "label": "My Role",
               "value": "Full-Stack Developer"
             }
           ]
@@ -61,13 +61,31 @@
               "img": "developer1.png",
               "name": "Rahadi Fauzan",
               "role": "Fullstack Engineer",
-              "linkedin": "https://linkedin.com/in/example"
+              "linkedin": "https://www.linkedin.com/in/rahadi-fauzan/"
             },
             {
               "img": "designer.png",
-              "name": "Sabila",
+              "name": "Tony Yoditanto",
+              "role": "DevOps & Project Manager",
+              "linkedin": "https://www.linkedin.com/in/tony-yoditanto/"
+            },
+            {
+              "img": "designer.png",
+              "name": "M. Hasnan Regard",
+              "role": "Backend Engineer",
+              "linkedin": "https://www.linkedin.com/in/mhasnanr/"
+            },
+            {
+              "img": "designer.png",
+              "name": "Raffi Fajar Rhamadhan",
+              "role": "Backend Engineer",
+              "linkedin": "https://www.linkedin.com/in/raffifajar/"
+            },
+            {
+              "img": "designer.png",
+              "name": "M. Irsyad Abdurahman",
               "role": "UI/UX Designer",
-              "linkedin": "https://linkedin.com/in/example2"
+              "linkedin": "https://www.linkedin.com/in/irsyadibdrrhmn19/"
             }
           ]
         },
@@ -177,19 +195,40 @@
               "value": "Ongoing"
             },
             {
-              "label": "Role",
-              "value": "Full-Stack Developer & Game System Designer"
+              "label": "My Role",
+              "value": "Full-Stack Engineer"
             }
           ]
         },
         {
-          "heading": "Client Testimonial",
-          "testimonial": {
-            "text": "This is the closest experience to having a real Dungeon Master online. The AI storytelling feels natural, the multiplayer is smooth, and every session feels unique and unpredictable.",
-            "author": "Alex Mercer",
-            "position": "Beta Tester & RPG Enthusiast"
-          },
-          "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop"
+          "heading": "Contributors",
+          "contributors": [
+            {
+              "img": "developer1.png",
+              "name": "Rahadi Fauzan",
+              "role": "Fullstack Engineer",
+              "linkedin": "https://www.linkedin.com/in/rahadi-fauzan/"
+            }
+          ]
+        },
+        {
+          "heading": "My Contribution",
+          "contributions": [
+            {
+              "label": "Frontend",
+              "tasks": [
+                "Built UI components",
+                "Integrated GraphQL"
+              ]
+            },
+            {
+              "label": "Backend",
+              "tasks": [
+                "Designed DB model",
+                "Created REST/GraphQL API"
+              ]
+            }
+          ]
         },
         {
           "heading": "Key Features",
@@ -205,134 +244,343 @@
           ]
         },
         {
-          "heading": "Results",
-          "grid": [
-            "Real-time multiplayer syncing up to 10 players",
-            "AI Dungeon Master capable of generating branching story scenarios",
-            "Stable and successful early playtest sessions",
-            "Modular architecture ready for future expansions"
-          ],
-          "links": {
-            "live": "Coming Soon",
-            "github": "https://github.com/zrahadiz/DnDGames"
-          }
+          "heading": "DnD Adventure",
+          "text": "Here are final UI designs and previews.",
+          "imgUrl": [
+            "src/assets/projects/dnd/dnd1.png",
+            "src/assets/projects/dnd/dnd2.png",
+            "src/assets/projects/dnd/dnd3.png"
+          ]
         }
       ]
     },
     {
       "id": 3,
-      "title": "Banking Dashboard",
-      "category": "UI/UX",
-      "description": "Intuitive banking dashboard with data visualization and transaction management.",
+      "title": "TixPlaza",
+      "category": "Web App",
+      "description": "TixPlaza is an online ticket booking platform that allows users to browse, select, and purchase tickets for various events such as concerts, sports, and theater performances. Built with Nuxt.js, and MySql, TixPlaza offers a seamless user experience with real-time seat selection, secure payment processing, and personalized event recommendations.",
       "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       "tags": [
-        "Figma",
-        "Design System",
-        "Charts"
+        "Nuxt.js",
+        "Prisma",
+        "MySQL",
+        "Xendit",
+        "Docker",
+        "Minio",
+        "TailwindCSS"
       ],
       "link": "#",
-      "github": "#",
+      "github": "https://github.com/vxaretra/TixPlaza/",
       "pages": [
         {
           "type": "cover",
-          "subtitle": "SecureBank Ltd.",
+          "subtitle": "TixPlaza",
           "tags": [
-            "Figma",
-            "Design System",
-            "Charts"
-          ]
+            "Nuxt.js",
+            "Prisma",
+            "MySQL",
+            "Xendit",
+            "Docker",
+            "Minio",
+            "TailwindCSS"
+          ],
+          "image": "src/assets/projects/dnd/dnd1.png"
         },
         {
           "heading": "Overview",
-          "text": "Redesigned the banking dashboard to provide users with better financial insights and streamlined transaction management.",
+          "text": "TixPlaza is an online ticket booking platform that allows users to browse, select, and purchase tickets for various events such as concerts, sports, and theater performances. Built with Nuxt.js, and MySql, TixPlaza offers a seamless user experience with real-time seat selection, secure payment processing, and personalized event recommendations.",
           "info": [
             {
               "label": "Client",
-              "value": "SecureBank Ltd."
+              "value": "Personal Project"
             },
             {
               "label": "Duration",
-              "value": "5 months"
+              "value": "Ongoing"
+            },
+            {
+              "label": "My Role",
+              "value": "Full-Stack Engineer"
             }
           ]
         },
         {
-          "heading": "Results",
-          "grid": [
-            "70% reduction in support tickets",
-            "50% faster transaction processing",
-            "95% user satisfaction rate",
-            "Zero security incidents"
+          "heading": "Contributors",
+          "contributors": [
+            {
+              "img": "developer1.png",
+              "name": "Rahadi Fauzan",
+              "role": "Fullstack Engineer",
+              "linkedin": "https://www.linkedin.com/in/rahadi-fauzan/"
+            },
+            {
+              "img": "developer1.png",
+              "name": "Andrew Rizqi Ramadhan",
+              "role": "Backend Engineer",
+              "linkedin": "https://www.linkedin.com/in/andrewramadhan00/"
+            }
+          ]
+        },
+        {
+          "heading": "My Contribution",
+          "contributions": [
+            {
+              "label": "Frontend",
+              "tasks": [
+                "Developed responsive UI components using Nuxt.js and TailwindCSS",
+                "Implemented real-time seat selection interface with dynamic state updates",
+                "Integrated event browsing, filtering, and detailed event pages",
+                "Built user authentication flows and protected routes",
+                "Connected frontend pages with backend APIs using async data fetching",
+                "Created intuitive checkout flow with error handling and UX optimizations"
+              ]
+            },
+            {
+              "label": "Backend",
+              "tasks": [
+                "Designed and structured the database schema using Prisma and MySQL",
+                "Implemented REST APIs for events, seats, bookings, and users",
+                "Integrated secure payment processing using Xendit",
+                "Developed real-time seat locking logic to prevent overbooking",
+                "Handled file storage for event banners and assets using Minio",
+                "Containerized the backend environment using Docker for consistent deployment"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Key Features",
+          "list": [
+            "Real-time seat selection with live availability updates",
+            "Secure online payment processing with multiple payment methods",
+            "Personalized event recommendations powered by user preferences",
+            "Advanced search and filtering for concerts, sports, and theater events",
+            "User-friendly Nuxt.js interface with fast and responsive performance",
+            "Order history and e-ticket management for seamless user access",
+            "Admin dashboard for event management, pricing, and ticket inventory",
+            "MySQL-backed data storage ensuring reliability and scalability"
+          ]
+        },
+        {
+          "heading": "TixPlaza",
+          "text": "Here are final UI designs and previews.",
+          "imgUrl": [
+            "src/assets/projects/dnd/dnd1.png",
+            "src/assets/projects/dnd/dnd2.png",
+            "src/assets/projects/dnd/dnd3.png"
           ]
         }
       ]
     },
     {
       "id": 4,
-      "title": "Brand Identity Suite",
-      "category": "Branding",
-      "description": "Complete brand identity including logo, color palette, and style guide.",
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
+      "title": "Moo Nonton",
+      "category": "Web App",
+      "description": "Moo Nonton is a simple movie streaming website built as a practice project to revisit the fundamentals of front-end development. After frequently relying on TailwindCSS, this project was intentionally created to relearn and strengthen core CSS skills. Developed using React.js and vanilla CSS, it features movie listings from various genres and includes a wishlist system managed with Redux. This project was completed as part of the Web Development course at the Korean ASEAN Digital Academy.",
+      "image": "src/assets/projects/moononton/moononton2.png",
       "tags": [
-        "Adobe XD",
-        "Illustrator",
-        "Branding"
+        "ReactJS",
+        "Vannila CSS",
+        "Redux"
       ],
-      "link": "#",
-      "github": "#",
+      "link": "https://moononton.pages.dev/",
+      "github": "https://github.com/zrahadiz/moo_nonton",
       "pages": [
         {
           "type": "cover",
-          "subtitle": "TechStart Ventures",
+          "subtitle": "Moo Nonton",
           "tags": [
-            "Adobe XD",
-            "Illustrator",
-            "Branding"
+            "ReactJS",
+            "Vannila CSS",
+            "Redux"
+          ],
+          "image": "src/assets/projects/moononton/moononton2.png"
+        },
+        {
+          "heading": "Project Overview",
+          "text": "Moo Nonton is a simple movie streaming website built as a practice project to revisit the fundamentals of front-end development. After frequently relying on TailwindCSS, this project was intentionally created to relearn and strengthen core CSS skills. Developed using React.js and vanilla CSS, it features movie listings from various genres and includes a wishlist system managed with Redux. This project was completed as part of the Web Development course at the Korean ASEAN Digital Academy.",
+          "links": {
+            "live": "https://moononton.pages.dev/",
+            "github": "https://github.com/zrahadiz/moo_nonton"
+          },
+          "info": [
+            {
+              "label": "Client",
+              "value": "Personal Project"
+            },
+            {
+              "label": "Duration",
+              "value": "3 days"
+            },
+            {
+              "label": "My Role",
+              "value": "Full-Stack Engineer"
+            }
           ]
         },
         {
-          "heading": "Deliverables",
+          "heading": "Contributors",
+          "contributors": [
+            {
+              "img": "developer1.png",
+              "name": "Rahadi Fauzan",
+              "role": "Frontend Engineer",
+              "linkedin": "https://www.linkedin.com/in/rahadi-fauzan/"
+            }
+          ]
+        },
+        {
+          "heading": "My Contribution",
+          "contributions": [
+            {
+              "label": "Frontend",
+              "tasks": [
+                "Built the entire user interface using React and Vanilla CSS to reinforce core styling fundamentals",
+                "Implemented page layouts and component structures without relying on utility frameworks",
+                "Managed global state with Redux to handle user wishlist and movie selections",
+                "Integrated movie data fetching and displayed genre-based movie lists",
+                "Added interactive features such as wishlist toggling and movie detail views",
+                "Optimized UI behavior and component rendering for a smooth browsing experience"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Key Features",
           "list": [
-            "Primary and secondary logos",
-            "Comprehensive color system",
-            "Typography guidelines",
-            "Icon library and illustrations",
-            "Print and digital templates",
-            "Brand voice and messaging guide"
+            "Movie browsing with genre-based filtering",
+            "Responsive UI built entirely with vanilla CSS",
+            "User wishlist system powered by Redux",
+            "Movie detail page with synopsis and metadata",
+            "Search functionality for quick movie discovery",
+            "Lightweight and fast front-end built with React",
+            "Clean and beginner-friendly interface layout"
+          ]
+        },
+        {
+          "heading": "Moo Nonton",
+          "text": "Here are final UI designs and previews.",
+          "imgUrl": [
+            "src/assets/projects/moononton/moononton1.png",
+            "src/assets/projects/moononton/moononton2.png",
+            "src/assets/projects/moononton/moononton3.png",
+            "src/assets/projects/moononton/moononton4.png"
           ]
         }
       ]
     },
     {
       "id": 5,
-      "title": "Real Estate Website",
-      "category": "Web Design",
-      "description": "Property listing website with advanced search and virtual tours.",
-      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+      "title": "Math 4 Dumb",
+      "category": "Web App",
+      "description": "This web aims to help students from elementary school to high school in learning math easily and fun. Because, on this web the material will be presented interactively and students can create discussion threads when facing difficult material so that it can be answered by other users. This web is built with Vue.js and Tailwind for the front-end. Then, using Express.js as a backend endpoint and MySql for database storage where storage includes account storage, material bookmarks, and discussion posts. And account security has also used Bcrypt, JWT, and Cookies.",
+      "image": "src/assets/projects/mathdumb/mathdumb1.png",
       "tags": [
-        "Webflow",
-        "CMS",
-        "SEO"
+        "Vue.js",
+        "Tailwind",
+        "Express.js",
+        "JWT",
+        "Bcrypt",
+        "Cookies",
+        "MySql"
       ],
-      "link": "#",
-      "github": "#",
+      "link": "https://medium.com/@rahadifauzan7/math-4-dumb-website-project-8fa2381f7629",
+      "github": "https://github.com/zrahadiz/Math4Dumb",
       "pages": [
         {
           "type": "cover",
-          "subtitle": "Prime Properties",
+          "subtitle": "Math 4 Dumb",
           "tags": [
-            "Webflow",
-            "CMS",
-            "SEO"
+            "Vue.js",
+            "Tailwind",
+            "Express.js",
+            "JWT",
+            "Bcrypt",
+            "Cookies",
+            "MySql"
           ]
         },
         {
-          "heading": "Features",
+          "heading": "Project Overview",
+          "text": "This web aims to help students from elementary school to high school in learning math easily and fun. Because, on this web the material will be presented interactively and students can create discussion threads when facing difficult material so that it can be answered by other users. This web is built with Vue.js and Tailwind for the front-end. Then, using Express.js as a backend endpoint and MySql for database storage where storage includes account storage, material bookmarks, and discussion posts. And account security has also used Bcrypt, JWT, and Cookies.",
+          "links": {
+            "live": "https://moononton.pages.dev/",
+            "github": "https://github.com/zrahadiz/moo_nonton"
+          },
+          "info": [
+            {
+              "label": "Client",
+              "value": "Personal Project"
+            },
+            {
+              "label": "Duration",
+              "value": "Ongoing"
+            },
+            {
+              "label": "My Role",
+              "value": "Full-Stack Engineer"
+            }
+          ]
+        },
+        {
+          "heading": "Contributors",
+          "contributors": [
+            {
+              "img": "developer1.png",
+              "name": "Rahadi Fauzan",
+              "role": "Frontend Engineer",
+              "linkedin": "https://www.linkedin.com/in/rahadi-fauzan/"
+            }
+          ]
+        },
+        {
+          "heading": "My Contribution",
+          "contributions": [
+            {
+              "label": "Frontend",
+              "tasks": [
+                "Developed the user interface using Vue.js with a responsive layout styled in TailwindCSS",
+                "Implemented interactive math learning modules and dynamic content rendering",
+                "Built discussion thread pages with real-time updates using Vue reactivity",
+                "Created bookmark functionality for users to save learning materials",
+                "Integrated frontend components with backend APIs for authentication, materials, and discussion posts",
+                "Handled client-side validation, error handling, and smooth user navigation"
+              ]
+            },
+            {
+              "label": "Backend",
+              "tasks": [
+                "Designed and structured MySQL database schema for users, materials, bookmarks, and discussion posts",
+                "Developed RESTful API endpoints using Express.js for authentication and content management",
+                "Implemented secure user authentication using Bcrypt for hashing and JWT + cookies for session management",
+                "Created API logic for discussion threads, including posting, replying, and fetching discussions",
+                "Built CRUD operations for learning materials and bookmark features",
+                "Ensured backend data validation, error handling, and role-based access protections"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Key Features",
           "list": [
-            "Advanced property filtering",
-            "360° virtual tours",
-            "Interactive map search",
-            "Mortgage calculator"
+            "Interactive math learning modules for elementary to high school students",
+            "Discussion forum for students to ask questions and help each other",
+            "Bookmark system for saving important materials to review later",
+            "User authentication with secure login and role-based access",
+            "Responsive and clean interface built with Vue.js and TailwindCSS",
+            "RESTful API with Express.js and MySQL for reliable data handling",
+            "Protected routes and secure sessions using JWT and cookies",
+            "Search and filtering for materials and discussion threads"
+          ]
+        },
+        {
+          "heading": "Moo Nonton",
+          "text": "Here are final UI designs and previews.",
+          "imgUrl": [
+            "src/assets/projects/mathdumb/mathdumb1.png",
+            "src/assets/projects/mathdumb/mathdumb2.png",
+            "src/assets/projects/mathdumb/mathdumb3.png",
+            "src/assets/projects/mathdumb/mathdumb4.png"
           ]
         }
       ]
