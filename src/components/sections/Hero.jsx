@@ -107,11 +107,6 @@ function Hero() {
                   Get Resume
                 </button>
               </a>
-
-              <button className="btn btn-ghost gap-2 text-gray-300 hover:text-white hover:bg-white/10">
-                <Play size={18} />
-                Watch Video
-              </button>
             </div>
           </div>
 

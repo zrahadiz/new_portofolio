@@ -1,6 +1,48 @@
 {
     "experiences": [
         {
+            "year": "December - Ongoing",
+            "role": "Scholarship to be Cloud Engineer in Japan Awardee",
+            "company": "Kebun Academy x PT ANC Japan",
+            "description": "Selected for a year-long scholarship program preparing candidates for Cloud Engineering careers in Japan through intensive JLPT N3-level Japanese language training, AWS Cloud professional certification, and career preparation including interview opportunities with Japanese companies.",
+            "technologies": [
+                "Japanese",
+                "AWS Cloud",
+                "Cloud Architecture",
+                "Linux",
+                "Networking",
+                "DevOps Fundamentals"
+            ]
+        },
+        {
+            "year": "Oktober - December 2025",
+            "role": "AWS re/Start Student",
+            "company": "Orbit Future Academy",
+            "description": "Completed the AWS re/Start program, gaining hands-on experience in IT fundamentals, Linux, networking, security, Python, databases, and core AWS cloud services. Trained through scenario-based labs and projects, including cloud architecture, automation, serverless, containers, and monitoring, while also developing essential workplace and professional skills.",
+            "technologies": [
+                "Networking",
+                "Elastic Load Balancing",
+                "Cloud Architecture",
+                "AWS (EC2, S3, VPC, Cloudwatch, IAM, Lambda)"
+            ]
+        },
+        {
+            "year": "September - November 2025",
+            "role": "Korea-ASEAN Digital Academy Student",
+            "company": "NIPA x Komdigi x ELICE",
+            "description": "Completed an intensive, fully funded training program focused on full-stack web development, cloud services, UI/UX fundamentals, data analysis, and AI ethics—combining hands-on projects with real industry workflows.",
+            "technologies": [
+                "React",
+                "MongoDB",
+                "Express.js",
+                "Node.js",
+                "AWS",
+                "AI",
+                "Data Analysis",
+                "Figma"
+            ]
+        },
+        {
             "year": "January 2024 - June 2025",
             "role": "Junior Software Engineer",
             "company": "PLN Icon Plus",

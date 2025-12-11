@@ -205,7 +205,7 @@ export default function Journey() {
             </button>
 
             {/* Experience Details Card - Fixed Size */}
-            <div className="w-full md:w-[600px] lg:w-[700px] h-[420px] md:h-[380px]">
+            <div className="w-full md:w-[700px] lg:w-[900px] h-[420px] md:h-[380px]">
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-white/10 h-full flex flex-col transition-all duration-500">
                 {/* Year Badge */}
                 <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full mb-4 w-fit">
