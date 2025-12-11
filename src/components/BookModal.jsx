@@ -11,18 +11,17 @@ import { Link } from "react-router-dom";
 
 export default function BookModal({ project, isOpen, onClose }) {
   const [currentPage, setCurrentPage] = useState(0);
-  const [imgErrors, setImgErrors] = useState(false);
+  const [imgErrors, setImgErrors] = useState({});
+  const isMobile = window.innerWidth < 768; // simple responsive check
 
-  const getInitials = (name = "") => {
-    return name
+  const getInitials = (name = "") =>
+    name
       .split(" ")
       .map((word) => word[0])
       .join("")
       .slice(0, 2)
       .toUpperCase();
-  };
 
-  // Reset to first page when modal opens with new project
   useEffect(() => {
     if (isOpen) {
       setCurrentPage(0);
@@ -38,26 +37,44 @@ export default function BookModal({ project, isOpen, onClose }) {
   if (!isOpen || !project) return null;
 
   const pages = project.pages || [];
-  const totalSpreads = Math.ceil(pages.length / 2);
+  const totalPages = pages.length;
+  const totalSpreads = Math.ceil(totalPages / 2);
+
+  /** -----------------------------
+   *     RESPONSIVE NAVIGATION
+   *  ----------------------------- */
 
   const nextPage = () => {
-    if (currentPage < totalSpreads - 1) {
-      setCurrentPage(currentPage + 1);
+    if (isMobile) {
+      // mobile = 1 page at a time
+      setCurrentPage((p) => Math.min(p + 1, totalPages - 1));
+    } else {
+      // desktop = jump by spread (2 pages)
+      setCurrentPage((p) => Math.min(p + 1, totalSpreads - 1));
     }
   };
 
   const prevPage = () => {
-    if (currentPage > 0) {
-      setCurrentPage(currentPage - 1);
+    if (isMobile) {
+      setCurrentPage((p) => Math.max(p - 1, 0));
+    } else {
+      setCurrentPage((p) => Math.max(p - 1, 0));
     }
   };
 
-  const leftPageIndex = currentPage * 2;
-  const rightPageIndex = currentPage * 2 + 1;
-  const leftPage = pages[leftPageIndex];
-  const rightPage = pages[rightPageIndex];
+  /** -----------------------------
+   *     PAGE INDEX CALCULATION
+   *  ----------------------------- */
 
-  // Render page content based on type
+  const leftPageIndex = isMobile ? currentPage : currentPage * 2;
+  const rightPageIndex = isMobile ? null : currentPage * 2 + 1;
+
+  const leftPage = pages[leftPageIndex];
+  const rightPage = rightPageIndex !== null ? pages[rightPageIndex] : null;
+
+  /** -----------------------------
+   *   Reuse your render functions
+   *  ----------------------------- */
   const renderPageContent = (page) => {
     if (!page) return null;
 
@@ -303,114 +320,73 @@ export default function BookModal({ project, isOpen, onClose }) {
     );
   };
 
+  /** -----------------------------
+   *      RENDER UI
+   *  ----------------------------- */
+
   return (
     <div
-      className="
-    fixed inset-0 z-50 flex items-center justify-center 
-    p-4 bg-black/80 backdrop-blur-sm animate-fadeIn
-  "
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-6xl"
+        className="relative max-w-6xl w-full"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="
-        absolute -top-12 right-0 
-        btn btn-circle btn-ghost text-white hover:bg-white/10
-      "
+          className="absolute -top-12 right-0 btn btn-circle btn-ghost text-white"
         >
           ✕
         </button>
 
-        {/* Book Container */}
-        <div
-          className="
-      relative bg-slate-900 rounded-xl shadow-2xl overflow-hidden
-      max-h-[85vh] flex flex-col
-    "
-        >
+        {/* BOOK */}
+        <div className="relative bg-slate-900 rounded-xl overflow-hidden shadow-2xl">
           <div
-            className="
-        flex flex-col md:flex-row 
-        h-full
-      "
+            className={`flex ${
+              isMobile ? "flex-col" : "flex-row"
+            } min-h-[600px]`}
           >
-            {/* Left Page */}
-            <div
-              className="
-          flex-1 bg-slate-800 p-6 md:p-10 
-          border-b md:border-b-0 md:border-r border-slate-700/50 
-          overflow-y-auto
-          max-h-[40vh] md:max-h-[85vh]
-        "
-            >
-              {leftPage && leftPage.type === "cover"
+            {/* LEFT PAGE */}
+            <div className="flex-1 bg-slate-800 p-8 md:p-12 border-r border-slate-700/50 overflow-y-auto relative max-h-[600px]">
+              {leftPage?.type === "cover"
                 ? renderCoverPage()
                 : renderPageContent(leftPage)}
-
-              {/* Page number */}
-              {leftPage && (
-                <div className="text-gray-500 text-xs mt-6 md:absolute md:bottom-4 md:left-8">
-                  {leftPageIndex + 1}
-                </div>
-              )}
             </div>
 
-            {/* Right Page */}
-            <div
-              className="
-          flex-1 bg-slate-800 p-6 md:p-10 
-          overflow-y-auto 
-          max-h-[40vh] md:max-h-[85vh]
-        "
-            >
-              {renderPageContent(rightPage)}
-
-              {rightPage && (
-                <div className="text-gray-500 text-xs mt-6 md:absolute md:bottom-4 md:right-8">
-                  {rightPageIndex + 1}
-                </div>
-              )}
-            </div>
+            {/* RIGHT PAGE (Desktop only) */}
+            {!isMobile && (
+              <div className="flex-1 bg-slate-800 p-8 md:p-12 overflow-y-auto relative max-h-[600px]">
+                {renderPageContent(rightPage)}
+              </div>
+            )}
           </div>
 
           {/* Navigation */}
-          <div
-            className="
-        sticky bottom-0 left-0 
-        flex items-center justify-center gap-4
-        bg-slate-900/90 backdrop-blur-sm
-        py-3 border-t border-white/10
-      "
-          >
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/90 px-4 py-2 rounded-full flex gap-4 items-center">
             <button
               onClick={prevPage}
               disabled={currentPage === 0}
-              className="
-            btn btn-circle btn-sm btn-ghost 
-            text-white hover:bg-white/10 
-            disabled:opacity-30 disabled:cursor-not-allowed
-          "
+              className="btn btn-circle btn-sm btn-ghost text-white"
             >
               <ChevronLeft size={20} />
             </button>
 
-            <span className="text-white text-sm font-medium">
-              {currentPage + 1} / {totalSpreads}
+            <span className="text-white text-sm">
+              {isMobile
+                ? `${leftPageIndex + 1} / ${totalPages}`
+                : `${currentPage + 1} / ${totalSpreads}`}
             </span>
 
             <button
               onClick={nextPage}
-              disabled={currentPage === totalSpreads - 1}
-              className="
-            btn btn-circle btn-sm btn-ghost 
-            text-white hover:bg-white/10 
-            disabled:opacity-30 disabled:cursor-not-allowed
-          "
+              disabled={
+                isMobile
+                  ? leftPageIndex >= totalPages - 1
+                  : currentPage >= totalSpreads - 1
+              }
+              className="btn btn-circle btn-sm btn-ghost text-white"
             >
               <ChevronRight size={20} />
             </button>
