@@ -1,73 +1,11 @@
-import React, { useState } from "react";
-import { Star, Quote, ChevronLeft, ChevronRight, User } from "lucide-react";
+import { useState } from "react";
+import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import { testimonials } from "@/data/testimonies";
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [imageErrors, setImageErrors] = useState({});
-
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Johnson",
-      position: "CEO",
-      company: "TechStart Inc.",
-      image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-      rating: 5,
-      text: "Working with this designer was an absolute pleasure. They transformed our vision into reality and exceeded all expectations. The attention to detail and creativity brought to our project was outstanding.",
-      project: "E-Commerce Platform",
-      color: "from-blue-500 to-cyan-500",
-    },
-    {
-      id: 2,
-      name: "Michael Chen",
-      position: "Product Manager",
-      company: "InnovateLabs",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      rating: 5,
-      text: "Exceptional work! The UI/UX design delivered was not only beautiful but also highly functional. Our user engagement increased by 200% after the redesign. Highly recommended for anyone looking for top-tier design work.",
-      project: "Mobile App Redesign",
-      color: "from-purple-500 to-pink-500",
-    },
-    {
-      id: 3,
-      name: "Emily Rodriguez",
-      position: "Marketing Director",
-      company: "BrandCraft",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-      rating: 5,
-      text: "A true professional who understands both design aesthetics and business goals. The branding package delivered helped us stand out in a crowded market. Communication was excellent throughout the project.",
-      project: "Brand Identity",
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      id: 4,
-      name: "David Miller",
-      position: "Founder",
-      company: "StartupHub",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-      rating: 5,
-      text: "The best investment we made for our business. The website design is stunning and our conversion rates have tripled. Professional, creative, and always delivered on time. Will definitely work together again!",
-      project: "Website Development",
-      color: "from-orange-500 to-red-500",
-    },
-    {
-      id: 5,
-      name: "Lisa Wang",
-      position: "CTO",
-      company: "DataFlow Systems",
-      image:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
-      rating: 5,
-      text: "Incredible attention to user experience and technical details. They bridged the gap between design and development perfectly. Our dashboard is now intuitive, beautiful, and our users love it!",
-      project: "Dashboard Design",
-      color: "from-indigo-500 to-purple-500",
-    },
-  ];
 
   const handleNext = () => {
     if (isAnimating) return;
@@ -152,18 +90,18 @@ export default function Testimonials() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full mb-4">
             <Star size={20} className="text-yellow-400 fill-yellow-400" />
-            <span className="text-sm text-gray-400">Client Feedback</span>
+            <span className="text-sm text-gray-400">Testimonials</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            What Clients Say
+            What Others Say
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Don't just take my word for it - hear from some of the amazing
-            clients I've worked with
+            peoples I've worked with
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-10">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-10">
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
                 50+
@@ -188,7 +126,7 @@ export default function Testimonials() {
               </div>
               <div className="text-gray-400 text-sm">Client Satisfaction</div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Main Testimonial Card */}

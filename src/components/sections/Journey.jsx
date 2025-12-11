@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Briefcase, Calendar, Download } from "lucide-react";
+import { useState } from "react";
+import { Calendar } from "lucide-react";
 import { experiences } from "@/data/growthJourney";
 
 export default function Journey() {

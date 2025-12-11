@@ -11,6 +11,8 @@ import {
   Facebook,
 } from "lucide-react";
 
+import resume from "@/assets/myCv/CV_Rahadi Fauzan_SWE.pdf";
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -288,7 +290,13 @@ export default function Contact() {
         <div className="mt-16 text-center">
           <p className="text-gray-400">
             Looking for my resume?{" "}
-            <a href="#" className="text-blue-400 hover:text-blue-300 underline">
+            <a
+              href={resume}
+              download="CV_Rahadi-Fauzan"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-400 hover:text-blue-300 underline"
+            >
               Download it here
             </a>
           </p>

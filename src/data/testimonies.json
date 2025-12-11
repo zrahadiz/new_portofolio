@@ -1,0 +1,15 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Andrew Rizqi Ramadhan",
+            "position": "Masters Student",
+            "company": "Melbourne University",
+            "image": "null",
+            "rating": 5,
+            "text": "Working with Rahadi on the Restaurant Menu Display project was an exceptional experience. He consistently delivered reliable solutions, approached complex problems with clear technical insight, and ensured every feature worked seamlessly from development to deployment. His strong collaboration, adaptability, and attention to detail greatly contributed to the success of our project.",
+            "project": "Restaurant Menu Display",
+            "color": "from-blue-500 to-cyan-500"
+        }
+    ]
+}
