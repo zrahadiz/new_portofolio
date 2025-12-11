@@ -166,7 +166,7 @@ export default function Projects() {
               >
                 <div
                   onClick={() => openProjectModal(project)}
-                  className="group bg-slate-800/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition-all duration-300 cursor-pointer hover:transform hover:scale-105"
+                  className="group bg-slate-800/50 backdrop-blur-sm min-h-[459.25px] rounded-2xl overflow-hidden border border-white/10 hover:border-blue-500/50 transition-all duration-300 cursor-pointer hover:transform hover:scale-105"
                 >
                   {/* Project Image */}
                   <div className="relative h-48 overflow-hidden bg-slate-700">

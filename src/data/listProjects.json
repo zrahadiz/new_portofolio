@@ -55,6 +55,24 @@
           ]
         },
         {
+          "heading": "The Challenge",
+          "text": "The wrong people are too often placed on the wrong projects, creating misalignment, stalled progress, and unnecessary frustration across teams.",
+          "list": [
+            "Misaligned Skills and Roles – Employees are assigned to projects that don’t match their true capabilities.",
+            "Inefficient Use of Talent – Resources are spread thin or underutilized due to guesswork-based allocation.",
+            "Increased Turnover & Costs – Poor project fit leads to disengagement, burnout, and higher replacement expenses."
+          ]
+        },
+        {
+          "heading": "The Solution",
+          "text": "We introduced an AI-powered HRIS that intelligently matches people to projects based on real data—skills, experience, certifications, and workload—ensuring every assignment is a strategic fit.",
+          "list": [
+            "AI-Generated Employee Profiles – Automatically track skills, tech stacks, certifications, achievements, and experience history.",
+            "Smart Project Matching Engine – Recommends or auto-assigns employees to projects using skill compatibility, availability, and workload balance.",
+            "Integrated Workflow Tools – Kanban boards and collaboration features streamline task visibility and team coordination."
+          ]
+        },
+        {
           "heading": "Contributors",
           "contributors": [
             {
@@ -106,24 +124,6 @@
                 "Created REST/GraphQL API"
               ]
             }
-          ]
-        },
-        {
-          "heading": "The Challenge",
-          "text": "The wrong people are too often placed on the wrong projects, creating misalignment, stalled progress, and unnecessary frustration across teams.",
-          "list": [
-            "Misaligned Skills and Roles – Employees are assigned to projects that don’t match their true capabilities.",
-            "Inefficient Use of Talent – Resources are spread thin or underutilized due to guesswork-based allocation.",
-            "Increased Turnover & Costs – Poor project fit leads to disengagement, burnout, and higher replacement expenses."
-          ]
-        },
-        {
-          "heading": "The Solution",
-          "text": "We introduced an AI-powered HRIS that intelligently matches people to projects based on real data—skills, experience, certifications, and workload—ensuring every assignment is a strategic fit.",
-          "list": [
-            "AI-Generated Employee Profiles – Automatically track skills, tech stacks, certifications, achievements, and experience history.",
-            "Smart Project Matching Engine – Recommends or auto-assigns employees to projects using skill compatibility, availability, and workload balance.",
-            "Integrated Workflow Tools – Kanban boards and collaboration features streamline task visibility and team coordination."
           ]
         },
         {
@@ -587,34 +587,144 @@
     },
     {
       "id": 6,
-      "title": "Food Delivery App",
-      "category": "Mobile App",
-      "description": "Fast and reliable food ordering app with real-time tracking.",
-      "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
+      "title": "Restaurant Menu Display",
+      "category": "IoT",
+      "description": "A remote digital signage system for restaurants that allows branch managers to control and schedule menu displays. Using a Raspberry Pi 3 connected to the in-store monitor, the device fetches menu assets (images/videos) and display schedules stored in Firebase. Managers can upload and manage menu content through a web dashboard, and the Raspberry Pi periodically syncs every 5 minutes, ensuring updated content even if the device was offline.",
+      "image": "src/assets/projects/digisignage/digisignage1.png",
       "tags": [
-        "Flutter",
-        "Maps API",
-        "Payment"
+        "Raspberry Pi 3",
+        "Vue.js",
+        "Python",
+        "Firebase",
+        "Cron Jobs / Scheduled Tasks",
+        "LibVLC"
       ],
-      "link": "#",
-      "github": "#",
+      "link": "https://medium.com/@rahadifauzan7/math-4-dumb-website-project-8fa2381f7629",
+      "github": "https://github.com/zrahadiz/Math4Dumb",
       "pages": [
         {
           "type": "cover",
-          "subtitle": "QuickBite Delivery",
+          "subtitle": "Math 4 Dumb",
           "tags": [
-            "Flutter",
-            "Maps API",
-            "Payment"
+            "Raspberry Pi 3",
+            "Vue.js",
+            "Python",
+            "Firebase",
+            "Cron Jobs / Scheduled Tasks",
+            "LibVLC"
+          ]
+        },
+        {
+          "heading": "Project Overview",
+          "text": "A remote digital signage system for restaurants that allows branch managers to control and schedule menu displays. Using a Raspberry Pi 3 connected to the in-store monitor, the device fetches menu assets (images/videos) and display schedules stored in Firebase. Managers can upload and manage menu content through a web dashboard, and the Raspberry Pi periodically syncs every 5 minutes, ensuring updated content even if the device was offline.",
+          "links": {
+            "live": "https://digisignage-7f419.web.app/",
+            "github": "https://github.com/zrahadiz/digital-signage"
+          },
+          "info": [
+            {
+              "label": "Client",
+              "value": "Famous Ice Cream franchise"
+            },
+            {
+              "label": "Duration",
+              "value": "2 months"
+            },
+            {
+              "label": "My Role",
+              "value": "Fullstack Engineer"
+            }
+          ]
+        },
+        {
+          "heading": "The Challenge",
+          "text": "Before implementing the system, restaurants relied on a completely manual process for updating their digital menus. Branch managers sent image or video assets through WhatsApp or Google Drive, which staff then had to download, copy to a flash drive, and manually plug into the display. This workflow was slow, inconsistent, prone to mistakes, and prevented managers from scheduling menu content accurately.",
+          "list": [
+            "Manual download and transfer of menu assets by staff",
+            "Flash drive dependency for updating the display",
+            "Time-consuming process that disrupted daily operations",
+            "No centralized system for managing assets across branches",
+            "Managers unable to schedule menu updates precisely",
+            "High risk of outdated or incorrect content being displayed"
+          ]
+        },
+        {
+          "heading": "The Solution",
+          "text": "We delivered a centralized, automated digital signage system powered by Raspberry Pi and Firebase. Branch managers can now upload menu assets through a web dashboard, schedule when each item should be displayed, and manage content remotely. The Raspberry Pi updates itself every few minutes using scheduled tasks, eliminating manual work and ensuring the display always shows the correct content.",
+          "list": [
+            "Web dashboard for uploading and managing menu assets",
+            "Centralized scheduling system with precise display timing",
+            "Raspberry Pi device connected directly to the restaurant monitor",
+            "Automatic content fetching from Firebase every five minutes",
+            "Full offline support—data remains cached even if the device is powered off",
+            "Reduced staff workload and ensured accurate menu displays"
+          ]
+        },
+        {
+          "heading": "Contributors",
+          "contributors": [
+            {
+              "img": "developer1.png",
+              "name": "Rahadi Fauzan",
+              "role": "Fullstack Engineer",
+              "linkedin": "https://www.linkedin.com/in/rahadi-fauzan/"
+            },
+            {
+              "img": "developer1.png",
+              "name": "Andrew Rizqi Ramadhan",
+              "role": "Fullstack Engineer",
+              "linkedin": "https://www.linkedin.com/in/andrewramadhan00/"
+            }
+          ]
+        },
+        {
+          "heading": "My Contribution",
+          "contributions": [
+            {
+              "label": "Frontend",
+              "tasks": [
+                "Developed a web dashboard using Vue.js for branch managers to upload menu assets such as images and videos",
+                "Implemented scheduling features to allow managers to set display times for each menu item",
+                "Built a clean and intuitive UI for managing assets, playlists, and display configurations",
+                "Integrated Firebase as the backend storage for menu data, schedules, and asset metadata"
+              ]
+            },
+            {
+              "label": "Device & Backend (Raspberry Pi)",
+              "tasks": [
+                "Configured the Raspberry Pi 3 as the main display controller connected to the restaurant monitor",
+                "Developed Python scripts to fetch the latest menu data and schedules from Firebase every 5 minutes using cron jobs",
+                "Implemented offline-ready storage so updated assets remain accessible even if the device loses connection",
+                "Used LibVLC to render images and play video playlists smoothly on the digital signage screen",
+                "Created an automated synchronization system that applies new schedules and assets without manual intervention"
+              ]
+            }
           ]
         },
         {
           "heading": "Key Features",
           "list": [
-            "Real-time order tracking",
-            "Multiple payment methods",
-            "Restaurant ratings and reviews",
-            "Scheduled deliveries"
+            "Remote menu management with real-time content updates",
+            "Asset upload system supporting images and videos",
+            "Flexible scheduling to control when specific menus are displayed",
+            "Automatic Raspberry Pi sync every 5 minutes via Firebase",
+            "Offline-ready playback — Raspberry Pi stores and plays content even without internet",
+            "Web dashboard for branch managers to manage menus and schedules",
+            "Smooth media playback using LibVLC for stability and performance",
+            "Centralized data handling to reduce manual staff workload"
+          ]
+        },
+        {
+          "heading": "Moo Nonton",
+          "text": "Here are final UI designs and previews.",
+          "imgUrl": [
+            "src/assets/projects/digisignage/digisignage1.png",
+            "src/assets/projects/digisignage/digisignage2.png",
+            "src/assets/projects/digisignage/digisignage3.png",
+            "src/assets/projects/digisignage/digisignage4.png",
+            "src/assets/projects/digisignage/digisignage5.png",
+            "src/assets/projects/digisignage/digisignage6.png",
+            "src/assets/projects/digisignage/digisignage7.png"
           ]
         }
       ]
