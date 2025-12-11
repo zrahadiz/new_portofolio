@@ -62,7 +62,7 @@ function Hero() {
   };
 
   return (
-    <div className="px-8 pt-36">
+    <div className="px-8 pb-10 pt-36">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>

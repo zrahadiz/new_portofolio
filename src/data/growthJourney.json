@@ -4,44 +4,67 @@
             "year": "January 2024 - June 2025",
             "role": "Junior Software Engineer",
             "company": "PLN Icon Plus",
-            "description": "Leading design initiatives for enterprise SaaS products, conducting user research, and mentoring junior designers.",
+            "description": "Developed and maintained responsive web applications, fixed software issues, and collaborated with cross-functional teams to deliver reliable digital solutions, including a government platform for distributing free rice cookers to priority groups.",
             "technologies": [
-                "Figma",
-                "Webflow",
-                "Adobe XD"
+                "Vue.js",
+                "TailwindCSS",
+                "Java",
+                "JSP",
+                "Spring Boot",
+                "Postgresql",
+                "Oracle"
             ]
         },
         {
             "year": "March - September 2023",
             "role": "Teaching Assistant",
             "company": "Pacmann",
-            "description": "Designed responsive websites and mobile applications for various clients in e-commerce and fintech sectors.",
+            "description": "Provided weekly mentoring and live sessions for Python beginners, evaluated student projects, and supported a 180+ member community through active Discord moderation.",
             "technologies": [
-                "Shopify",
-                "Sketch",
-                "Prototyping"
+                "Teaching",
+                "Python",
+                "Google Colab",
+                "Jupyter Notebook",
+                "GitHub"
             ]
         },
         {
             "year": "September - February 2023",
             "role": "Engineering Specialist Intern",
             "company": "BINUS University",
-            "description": "Collaborated with cross-functional teams to create user-centered designs and interactive prototypes.",
+            "description": "Supported departmental projects by developing IoT prototypes, creating digital microscope motion systems, and designing interactive LED installations for campus events. Helped produce workshop materials and trial-class modules while undergoing training in 3D printing, PCB design, and equipment operation.",
             "technologies": [
-                "Figma",
-                "HTML/CSS",
-                "JavaScript"
+                "ESP32",
+                "IoT",
+                "3D Printing",
+                "PCB Design",
+                "Soldering",
+                "Python",
+                "C++"
             ]
         },
         {
-            "year": "February - August 2022",
+            "year": "February – August 2022",
             "role": "IT Support Engineer Intern",
             "company": "PT. Boon Software",
-            "description": "Assisted in creating wireframes, mockups, and design systems for web and mobile applications.",
+            "description": "Provided technical support for system configuration, installation, and troubleshooting across hardware, software, and server environments. Implemented automated Apache log rotation for efficient log management and performed daily monitoring of 16+ client servers via remote tools.",
             "technologies": [
-                "Adobe Suite",
-                "Wireframing",
-                "UI Design"
+                "Linux",
+                "Apache",
+                "Remote Server Monitoring",
+                "Shell Scripting"
+            ]
+        },
+        {
+            "year": "June 2019 - August 2023",
+            "role": "Bachelor’s Student in Computer Engineering",
+            "company": "BINUS University",
+            "description": "This period marked my foundation in software and hardware development, where I gained core skills through academic projects, lab work, and hands-on engineering practices.",
+            "technologies": [
+                "C++",
+                "Python",
+                "IoT Development",
+                "Microcontrollers"
             ]
         }
     ]

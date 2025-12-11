@@ -7,13 +7,30 @@ import Contact from "@/components/sections/Contact";
 
 function Home() {
   return (
-    <div className="space-y-20 md:space-y-44">
-      <Hero />
-      <Journey />
-      <Projects />
-      <SkillsTools />
-      <Testimonials />
-      <Contact />
+    <div className="space-y-20 md:space-y-28">
+      <section id="about" className="scroll-mt-24">
+        <Hero />
+      </section>
+
+      <section id="journey" className="scroll-mt-24">
+        <Journey />
+      </section>
+
+      <section id="projects" className="scroll-mt-24">
+        <Projects />
+      </section>
+
+      <section id="skills" className="scroll-mt-24">
+        <SkillsTools />
+      </section>
+
+      <section id="testimonials" className="scroll-mt-24">
+        <Testimonials />
+      </section>
+
+      <section id="contact" className="scroll-mt-24">
+        <Contact />
+      </section>
     </div>
   );
 }

@@ -5,6 +5,10 @@
   --breakpoint-xs: 28rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .perspective-2000 {
   perspective: 2000px;
 }

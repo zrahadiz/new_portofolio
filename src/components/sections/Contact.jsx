@@ -93,7 +93,7 @@ export default function Contact() {
   ];
 
   return (
-    <section className="px-8 pb-20 text-white relative overflow-hidden">
+    <section className="px-8 pt-10 pb-20 text-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
 

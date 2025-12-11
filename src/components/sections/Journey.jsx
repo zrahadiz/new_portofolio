@@ -57,7 +57,7 @@ export default function Journey() {
       : 50;
 
   return (
-    <section className="px-8 text-white relative overflow-hidden">
+    <section className="px-8 py-10 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
