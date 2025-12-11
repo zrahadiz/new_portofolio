@@ -11,7 +11,7 @@ import {
   Facebook,
 } from "lucide-react";
 
-import resume from "@/assets/myCv/CV_Rahadi Fauzan_SWE.pdf";
+import resume from "@/assets/myCV/CV_Rahadi Fauzan_SWE.pdf";
 
 export default function Contact() {
   const [formData, setFormData] = useState({

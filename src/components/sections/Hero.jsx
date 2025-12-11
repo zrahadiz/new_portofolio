@@ -7,7 +7,7 @@ import {
   SiWhatsapp,
 } from "@icons-pack/react-simple-icons";
 
-import resume from "@/assets/myCv/CV_Rahadi Fauzan_SWE.pdf";
+import resume from "@/assets/myCV/CV_Rahadi Fauzan_SWE.pdf";
 import profileImg from "@/assets/test.jpg";
 
 function Hero() {
