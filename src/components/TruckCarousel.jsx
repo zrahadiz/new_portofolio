@@ -1,85 +1,101 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import * as Icons from "@icons-pack/react-simple-icons";
+import * as HeadIcons from "lucide-react";
 
-const renderTruck = (category) => (
-  <div className="relative">
-    {/* Cargo Container with Skills - Responsive sizes */}
-    <div
-      className={`w-48 h-40 xs:w-64 sm:w-80 sm:h-48 md:w-96 md:h-56 lg:w-[500px] lg:h-64 xl:w-[600px] xl:h-72 bg-gradient-to-br ${category.color} rounded-lg shadow-2xl relative overflow-hidden`}
-    >
-      {/* Container Texture */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="grid grid-cols-6 h-full">
-          {[...Array(24)].map((_, i) => (
-            <div key={i} className="border border-white/20"></div>
-          ))}
+const renderTruck = (category) => {
+  const HeadIconComponent = HeadIcons[category.icon];
+  return (
+    <div className="relative">
+      {/* Cargo Container with Skills - Responsive sizes */}
+      <div
+        className={`w-48 h-40 xs:w-64 sm:w-80 sm:h-48 md:w-96 md:h-56 lg:w-[500px] lg:h-64 xl:w-[600px] xl:h-72 bg-gradient-to-br ${category.color} rounded-lg shadow-2xl relative overflow-hidden`}
+      >
+        {/* Container Texture */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="grid grid-cols-6 h-full">
+            {[...Array(24)].map((_, i) => (
+              <div key={i} className="border border-white/20"></div>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Category Label - Responsive text */}
-      <div className="absolute top-2 left-2 right-2 sm:top-4 sm:left-4 sm:right-4 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-4 sm:py-3 md:px-6 flex items-center gap-2 sm:gap-3">
-        <span className="text-2xl sm:text-3xl md:text-4xl">
-          {category.icon}
-        </span>
-        <span className="font-bold text-white text-sm sm:text-base md:text-lg lg:text-xl">
-          {category.category}
-        </span>
-      </div>
+        {/* Category Label - Responsive text */}
+        <div className="absolute top-2 left-2 right-2 sm:top-4 sm:left-4 sm:right-4 bg-white/20 backdrop-blur-sm rounded-lg px-3 py-2 sm:px-4 sm:py-3 md:px-6 flex items-center gap-2 sm:gap-3">
+          <span className="text-2xl sm:text-3xl md:text-4xl">
+            {HeadIconComponent ? (
+              <HeadIconComponent size={36} />
+            ) : (
+              <span>❓</span>
+            )}
+          </span>
+          <span className="font-bold text-white text-sm sm:text-base md:text-lg lg:text-xl">
+            {category.category}
+          </span>
+        </div>
 
-      {/* Skills Grid - Responsive spacing and columns */}
-      <div className="absolute top-14 left-2 right-2 bottom-2 sm:top-16 sm:left-4 sm:right-4 sm:bottom-4 md:top-20 lg:top-24 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 pr-2">
-          {category.skills.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105"
-            >
-              <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2">
-                <span className="text-lg sm:text-xl md:text-2xl">
-                  {skill.icon}
-                </span>
-                <span className="text-xs sm:text-sm md:text-base font-semibold text-white truncate">
-                  {skill.name}
-                </span>
-              </div>
-              {/* Progress Bar */}
-              <div className="w-full bg-white/20 rounded-full h-1.5 sm:h-2">
+        {/* Skills Grid - Responsive spacing and columns */}
+        <div className="absolute top-16  left-2 right-2 bottom-2 sm:top-19 sm:left-4 sm:right-4 sm:bottom-4 md:top-20 lg:top-22 overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 p-2">
+            {category.skills.map((skill, index) => {
+              const IconComponent = Icons[skill.icon];
+              return (
                 <div
-                  className="bg-white rounded-full h-1.5 sm:h-2 transition-all duration-1000"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
+                  key={index}
+                  className="bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105"
+                >
+                  <div className="flex items-center gap-1 sm:gap-2 mb-1 sm:mb-2">
+                    <span className="text-lg sm:text-xl md:text-2xl">
+                      {IconComponent ? (
+                        <IconComponent size={24} />
+                      ) : (
+                        <span>❓</span>
+                      )}
+                    </span>
+                    <span className="text-xs sm:text-sm md:text-base font-semibold text-white truncate">
+                      {skill.name}
+                    </span>
+                  </div>
+                  {/* Progress Bar */}
+                  <div className="w-full bg-white/20 rounded-full h-1.5 sm:h-2">
+                    <div
+                      className="bg-white rounded-full h-1.5 sm:h-2 transition-all duration-1000"
+                      style={{ width: `${skill.level}%` }}
+                    ></div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      {/* Truck Cabin - Responsive sizes */}
+      <div className="absolute -right-14 bottom-0 w-14 h-24 sm:-right-16 sm:w-16 sm:h-28 md:-right-20 md:w-20 md:h-32 lg:-right-24 lg:w-24 lg:h-36 bg-gradient-to-br from-slate-700 to-slate-800 rounded-tl-xl rounded-tr-sm shadow-xl">
+        {/* Window */}
+        <div className="absolute top-3 left-2 w-10 h-12 sm:top-4 sm:left-3 sm:w-12 sm:h-14 md:w-14 md:h-16 lg:w-16 lg:h-20 bg-blue-400/30 rounded border-2 border-slate-600"></div>
+        {/* Door line */}
+        <div className="absolute top-16 left-2 right-2 h-8 sm:top-20 sm:left-3 sm:right-3 md:top-24 lg:h-10 border-t-2 border-slate-600"></div>
+        {/* Details */}
+        <div className="absolute top-1 right-1 w-1.5 h-1.5 sm:top-2 sm:right-2 sm:w-2 sm:h-2 bg-orange-400 rounded-full"></div>
+      </div>
+      {/* Wheels - Responsive sizes and gaps */}
+      <div className="absolute -bottom-4 left-8 flex gap-24 sm:-bottom-6 sm:left-12 sm:gap-32 md:gap-40 lg:gap-52 xl:gap-72">
+        {/* Back Wheel */}
+        <div className="relative">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-slate-900 rounded-full border-3 sm:border-4 border-slate-700 shadow-lg"></div>
+          <div className="absolute inset-2 sm:inset-3 bg-slate-600 rounded-full"></div>
+          <div className="absolute inset-3 sm:inset-4 bg-slate-700 rounded-full"></div>
+        </div>
+        {/* Front Wheel */}
+        <div className="relative">
+          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-slate-900 rounded-full border-3 sm:border-4 border-slate-700 shadow-lg"></div>
+          <div className="absolute inset-2 sm:inset-3 bg-slate-600 rounded-full"></div>
+          <div className="absolute inset-3 sm:inset-4 bg-slate-700 rounded-full"></div>
         </div>
       </div>
     </div>
-    {/* Truck Cabin - Responsive sizes */}
-    <div className="absolute -right-14 bottom-0 w-14 h-24 sm:-right-16 sm:w-16 sm:h-28 md:-right-20 md:w-20 md:h-32 lg:-right-24 lg:w-24 lg:h-36 bg-gradient-to-br from-slate-700 to-slate-800 rounded-tl-xl rounded-tr-sm shadow-xl">
-      {/* Window */}
-      <div className="absolute top-3 left-2 w-10 h-12 sm:top-4 sm:left-3 sm:w-12 sm:h-14 md:w-14 md:h-16 lg:w-16 lg:h-20 bg-blue-400/30 rounded border-2 border-slate-600"></div>
-      {/* Door line */}
-      <div className="absolute top-16 left-2 right-2 h-8 sm:top-20 sm:left-3 sm:right-3 md:top-24 lg:h-10 border-t-2 border-slate-600"></div>
-      {/* Details */}
-      <div className="absolute top-1 right-1 w-1.5 h-1.5 sm:top-2 sm:right-2 sm:w-2 sm:h-2 bg-orange-400 rounded-full"></div>
-    </div>
-    {/* Wheels - Responsive sizes and gaps */}
-    <div className="absolute -bottom-4 left-8 flex gap-24 sm:-bottom-6 sm:left-12 sm:gap-32 md:gap-40 lg:gap-52 xl:gap-72">
-      {/* Back Wheel */}
-      <div className="relative">
-        <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-slate-900 rounded-full border-3 sm:border-4 border-slate-700 shadow-lg"></div>
-        <div className="absolute inset-2 sm:inset-3 bg-slate-600 rounded-full"></div>
-        <div className="absolute inset-3 sm:inset-4 bg-slate-700 rounded-full"></div>
-      </div>
-      {/* Front Wheel */}
-      <div className="relative">
-        <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-slate-900 rounded-full border-3 sm:border-4 border-slate-700 shadow-lg"></div>
-        <div className="absolute inset-2 sm:inset-3 bg-slate-600 rounded-full"></div>
-        <div className="absolute inset-3 sm:inset-4 bg-slate-700 rounded-full"></div>
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 const TruckCarousel = ({ skillCategories }) => {
   // We track [currentTruck, direction] tuple

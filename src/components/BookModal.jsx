@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 export default function BookModal({ project, isOpen, onClose }) {
   const [currentPage, setCurrentPage] = useState(0);
   const [imgErrors, setImgErrors] = useState({});
-  const isMobile = window.innerWidth < 768; // simple responsive check
+  const isMobile = window.innerWidth < 768;
 
   const getInitials = (name = "") =>
     name
@@ -40,10 +40,6 @@ export default function BookModal({ project, isOpen, onClose }) {
   const totalPages = pages.length;
   const totalSpreads = Math.ceil(totalPages / 2);
 
-  /** -----------------------------
-   *     RESPONSIVE NAVIGATION
-   *  ----------------------------- */
-
   const nextPage = () => {
     if (isMobile) {
       // mobile = 1 page at a time
@@ -62,19 +58,12 @@ export default function BookModal({ project, isOpen, onClose }) {
     }
   };
 
-  /** -----------------------------
-   *     PAGE INDEX CALCULATION
-   *  ----------------------------- */
-
   const leftPageIndex = isMobile ? currentPage : currentPage * 2;
   const rightPageIndex = isMobile ? null : currentPage * 2 + 1;
 
   const leftPage = pages[leftPageIndex];
   const rightPage = rightPageIndex !== null ? pages[rightPageIndex] : null;
 
-  /** -----------------------------
-   *   Reuse your render functions
-   *  ----------------------------- */
   const renderPageContent = (page) => {
     if (!page) return null;
 
@@ -280,7 +269,6 @@ export default function BookModal({ project, isOpen, onClose }) {
     );
   };
 
-  // Special rendering for cover page
   const renderCoverPage = () => {
     if (currentPage !== 0 || !leftPage || leftPage.type !== "cover")
       return null;
@@ -319,10 +307,6 @@ export default function BookModal({ project, isOpen, onClose }) {
       </div>
     );
   };
-
-  /** -----------------------------
-   *      RENDER UI
-   *  ----------------------------- */
 
   return (
     <div

@@ -2,241 +2,291 @@
     "skillCategories": [
         {
             "id": 1,
-            "category": "Frontend Development",
-            "icon": "🎨",
-            "color": "from-blue-500 to-cyan-500",
+            "category": "Programming Language",
+            "icon": "BookA",
+            "color": "from-teal-500 to-teal-500",
             "skills": [
                 {
-                    "name": "React",
-                    "level": 95,
-                    "icon": "⚛️"
+                    "name": "C++",
+                    "level": 55,
+                    "icon": "SiCplusplus"
+                },
+                {
+                    "name": "Java",
+                    "level": 60,
+                    "icon": "SiCoffeescript"
+                },
+                {
+                    "name": "Python",
+                    "level": 70,
+                    "icon": "SiPython"
                 },
                 {
                     "name": "JavaScript",
-                    "level": 90,
-                    "icon": "📜"
+                    "level": 80,
+                    "icon": "SiJavascript"
                 },
                 {
                     "name": "TypeScript",
+                    "level": 75,
+                    "icon": "SiTypescript"
+                },
+                {
+                    "name": "SQL",
                     "level": 85,
-                    "icon": "📘"
+                    "icon": "SiSqlite"
                 },
                 {
                     "name": "HTML/CSS",
-                    "level": 95,
-                    "icon": "🎨"
-                },
-                {
-                    "name": "Tailwind CSS",
                     "level": 90,
-                    "icon": "💨"
-                },
-                {
-                    "name": "Next.js",
-                    "level": 80,
-                    "icon": "▲"
-                },
-                {
-                    "name": "Vue.js",
-                    "level": 75,
-                    "icon": "💚"
-                },
-                {
-                    "name": "SASS/SCSS",
-                    "level": 85,
-                    "icon": "💅"
+                    "icon": "SiHtml5"
                 }
             ]
         },
         {
             "id": 2,
-            "category": "Backend Development",
-            "icon": "⚙️",
-            "color": "from-green-500 to-emerald-500",
+            "category": "Frontend Development",
+            "icon": "MonitorCheck",
+            "color": "from-blue-500 to-cyan-500",
             "skills": [
                 {
-                    "name": "Node.js",
-                    "level": 85,
-                    "icon": "🟢"
-                },
-                {
-                    "name": "Python",
-                    "level": 80,
-                    "icon": "🐍"
-                },
-                {
-                    "name": "Express.js",
-                    "level": 85,
-                    "icon": "🚂"
-                },
-                {
-                    "name": "MongoDB",
-                    "level": 80,
-                    "icon": "🍃"
-                },
-                {
-                    "name": "PostgreSQL",
+                    "name": "React",
                     "level": 75,
-                    "icon": "🐘"
+                    "icon": "SiReact"
                 },
                 {
-                    "name": "REST API",
-                    "level": 90,
-                    "icon": "🔌"
+                    "name": "Vue.js",
+                    "level": 80,
+                    "icon": "SiVuedotjs"
                 },
                 {
-                    "name": "GraphQL",
+                    "name": "Next.js",
                     "level": 70,
-                    "icon": "◈"
+                    "icon": "SiNextdotjs"
                 },
                 {
-                    "name": "Firebase",
+                    "name": "Nuxt.js",
+                    "level": 70,
+                    "icon": "SiNuxt"
+                },
+                {
+                    "name": "SASS/SCSS",
+                    "level": 80,
+                    "icon": "SiSass"
+                },
+                {
+                    "name": "Bootstrap",
+                    "level": 90,
+                    "icon": "SiBootstrap"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "level": 87,
+                    "icon": "SiTailwindcss"
+                },
+                {
+                    "name": "Ant Design",
+                    "level": 76,
+                    "icon": "SiAntdesign"
+                },
+                {
+                    "name": "Shadcn/UI",
                     "level": 85,
-                    "icon": "🔥"
+                    "icon": "SiShadcnui"
+                },
+                {
+                    "name": "DaisyUI",
+                    "level": 80,
+                    "icon": "SiDaisyui"
                 }
             ]
         },
         {
             "id": 3,
-            "category": "Design Tools",
-            "icon": "🎯",
-            "color": "from-purple-500 to-pink-500",
+            "category": "Backend Development",
+            "icon": "DatabaseZap",
+            "color": "from-green-500 to-emerald-500",
             "skills": [
                 {
-                    "name": "Figma",
-                    "level": 95,
-                    "icon": "🎨"
+                    "name": "REST API",
+                    "level": 84,
+                    "icon": "SiSwagger"
                 },
                 {
-                    "name": "Adobe XD",
-                    "level": 90,
-                    "icon": "🎭"
+                    "name": "Socket.IO",
+                    "level": 78,
+                    "icon": "SiSocketdotio"
                 },
                 {
-                    "name": "Sketch",
-                    "level": 80,
-                    "icon": "💎"
-                },
-                {
-                    "name": "Photoshop",
-                    "level": 85,
-                    "icon": "🖼️"
-                },
-                {
-                    "name": "Illustrator",
-                    "level": 80,
-                    "icon": "✏️"
-                },
-                {
-                    "name": "InVision",
-                    "level": 75,
-                    "icon": "👁️"
-                },
-                {
-                    "name": "Framer",
+                    "name": "GraphQL",
                     "level": 70,
-                    "icon": "🎬"
+                    "icon": "SiGraphql"
                 },
                 {
-                    "name": "Webflow",
+                    "name": "Node.js",
                     "level": 85,
-                    "icon": "🌊"
+                    "icon": "SiNodedotjs"
+                },
+                {
+                    "name": "Express.js",
+                    "level": 87,
+                    "icon": "SiExpress"
+                },
+                {
+                    "name": "Spring Boot",
+                    "level": 65,
+                    "icon": "SiSpringboot"
+                },
+                {
+                    "name": "Drizzle",
+                    "level": 80,
+                    "icon": "SiDrizzle"
+                },
+                {
+                    "name": "Prisma",
+                    "level": 75,
+                    "icon": "SiPrisma"
+                },
+                {
+                    "name": "MongoDB",
+                    "level": 79,
+                    "icon": "SiMongodb"
+                },
+                {
+                    "name": "MySQL",
+                    "level": 83,
+                    "icon": "SiMysql"
+                },
+                {
+                    "name": "PostgreSQL",
+                    "level": 83,
+                    "icon": "SiPostgresql"
+                },
+                {
+                    "name": "Firebase",
+                    "level": 81,
+                    "icon": "SiFirebase"
                 }
             ]
         },
         {
             "id": 4,
             "category": "DevOps & Tools",
-            "icon": "🛠️",
+            "icon": "Rocket",
             "color": "from-orange-500 to-red-500",
             "skills": [
                 {
                     "name": "Git",
-                    "level": 90,
-                    "icon": "🔀"
+                    "level": 85,
+                    "icon": "SiGit"
+                },
+                {
+                    "name": "CI/CD",
+                    "level": 70,
+                    "icon": "SiJfrogpipelines"
                 },
                 {
                     "name": "Docker",
-                    "level": 75,
-                    "icon": "🐳"
+                    "level": 67,
+                    "icon": "SiDocker"
                 },
                 {
                     "name": "AWS",
                     "level": 70,
-                    "icon": "☁️"
+                    "icon": "SiCloudways"
                 },
                 {
-                    "name": "CI/CD",
+                    "name": "Cloudflare",
                     "level": 80,
-                    "icon": "🔄"
+                    "icon": "SiCloudflare"
                 },
                 {
-                    "name": "Webpack",
-                    "level": 75,
-                    "icon": "📦"
+                    "name": "Railway",
+                    "level": 78,
+                    "icon": "SiRailway"
                 },
                 {
-                    "name": "Jest",
+                    "name": "Vercel",
+                    "level": 81,
+                    "icon": "SiVercel"
+                },
+                {
+                    "name": "Netlify",
                     "level": 85,
-                    "icon": "🃏"
-                },
-                {
-                    "name": "Linux",
-                    "level": 80,
-                    "icon": "🐧"
-                },
-                {
-                    "name": "Nginx",
-                    "level": 70,
-                    "icon": "🟩"
+                    "icon": "SiNetlify"
                 }
             ]
         },
         {
             "id": 5,
-            "category": "Mobile Development",
-            "icon": "📱",
-            "color": "from-indigo-500 to-purple-500",
+            "category": "Others",
+            "icon": "Settings",
+            "color": "from-purple-500 to-pink-500",
             "skills": [
                 {
-                    "name": "React Native",
-                    "level": 85,
-                    "icon": "⚛️"
+                    "name": "Arduino",
+                    "level": 80,
+                    "icon": "SiArduino"
                 },
                 {
-                    "name": "Flutter",
+                    "name": "Espressif",
+                    "level": 83,
+                    "icon": "SiEspressif"
+                },
+                {
+                    "name": "Raspberry Pi",
+                    "level": 67,
+                    "icon": "SiRaspberrypi"
+                },
+                {
+                    "name": "MQTT",
+                    "level": 70,
+                    "icon": "SiMqtt"
+                },
+                {
+                    "name": "Selenium",
+                    "level": 78,
+                    "icon": "SiSelenium"
+                },
+                {
+                    "name": "Robot Framework",
+                    "level": 80,
+                    "icon": "SiRobotframework"
+                },
+                {
+                    "name": "Pandas",
+                    "level": 73,
+                    "icon": "SiPandas"
+                },
+                {
+                    "name": "Numpy",
                     "level": 75,
-                    "icon": "🦋"
+                    "icon": "SiNumpy"
                 },
                 {
-                    "name": "iOS Dev",
-                    "level": 70,
-                    "icon": "🍎"
+                    "name": "Matplotlib",
+                    "level": 78,
+                    "icon": "SiMatrix"
                 },
                 {
-                    "name": "Android Dev",
-                    "level": 70,
-                    "icon": "🤖"
+                    "name": "Trello",
+                    "level": 95,
+                    "icon": "SiTrello"
                 },
                 {
-                    "name": "Expo",
-                    "level": 80,
-                    "icon": "📲"
+                    "name": "ClickUp",
+                    "level": 95,
+                    "icon": "SiClickup"
                 },
                 {
-                    "name": "Swift",
-                    "level": 65,
-                    "icon": "🏎️"
+                    "name": "Figma",
+                    "level": 85,
+                    "icon": "SiFigma"
                 },
                 {
-                    "name": "Kotlin",
-                    "level": 65,
-                    "icon": "🔷"
-                },
-                {
-                    "name": "App Store",
-                    "level": 80,
-                    "icon": "🏪"
+                    "name": "Inkscape",
+                    "level": 90,
+                    "icon": "SiInkscape"
                 }
             ]
         }
