@@ -1,15 +1,11 @@
 import { useState } from "react";
+import { Mail, Phone, MapPin, Send, CheckCircle, Linkedin } from "lucide-react";
+
 import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  CheckCircle,
-  Linkedin,
-  Github,
-  Twitter,
-  Facebook,
-} from "lucide-react";
+  SiGithub,
+  SiInstagram,
+  SiWhatsapp,
+} from "@icons-pack/react-simple-icons";
 
 import resume from "@/assets/myCV/CV_Rahadi Fauzan_SWE.pdf";
 
@@ -65,14 +61,14 @@ export default function Contact() {
       icon: Phone,
       label: "Phone",
       value: "+62 811-1107-244",
-      link: "tel:+628111107244",
+      link: "https://wa.me/628111107244",
       color: "from-green-500 to-emerald-500",
     },
     {
       icon: MapPin,
       label: "Location",
       value: "Bogor, Indonesia",
-      link: "#",
+      link: "https://maps.app.goo.gl/eUnjccFBSJLaxyRQ8",
       color: "from-purple-500 to-pink-500",
     },
   ];
@@ -81,15 +77,25 @@ export default function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      link: "#",
+      link: "https://www.linkedin.com/in/rahadi-fauzan/",
       color: "hover:text-blue-400",
     },
-    { icon: Github, label: "GitHub", link: "#", color: "hover:text-gray-400" },
-    { icon: Twitter, label: "Twitter", link: "#", color: "hover:text-sky-400" },
     {
-      icon: Facebook,
-      label: "Facebook",
-      link: "#",
+      icon: SiGithub,
+      label: "GitHub",
+      link: "https://github.com/zrahadiz",
+      color: "hover:text-gray-400",
+    },
+    {
+      icon: SiInstagram,
+      label: "Instagram",
+      link: "https://www.instagram.com/zrahadiz/",
+      color: "hover:text-sky-400",
+    },
+    {
+      icon: SiWhatsapp,
+      label: "Whatsapp",
+      link: "https://wa.me/628111107244",
       color: "hover:text-blue-500",
     },
   ];
@@ -124,13 +130,14 @@ export default function Contact() {
                 Feel free to reach out through any of these channels. I
                 typically respond within 24 hours.
               </p>
-
+              {/* 
               {/* Contact Cards */}
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}
                     href={info.link}
+                    target="_blank"
                     className="flex items-center gap-4 p-4 bg-slate-800/50 backdrop-blur-sm rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105 group"
                   >
                     <div
@@ -155,6 +162,7 @@ export default function Contact() {
                   <a
                     key={index}
                     href={social.link}
+                    target="_blank"
                     aria-label={social.label}
                     className={`w-12 h-12 rounded-full bg-slate-800/50 backdrop-blur-sm border border-white/10 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:border-white/30 ${social.color}`}
                   >
@@ -168,7 +176,7 @@ export default function Contact() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-full">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
               <span className="text-sm text-green-400">
-                Available for freelance work
+                Available for full-time / part-time / freelance work
               </span>
             </div>
           </div>

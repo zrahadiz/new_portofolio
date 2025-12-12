@@ -156,24 +156,39 @@ function Hero() {
 
                 {/* Icons positioned along the curve */}
                 <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/rahadi-fauzan",
+                      "_blank"
+                    )
+                  }
                   className="absolute btn btn-circle btn-ghost border border-white/20 hover:bg-white hover:text-slate-900 transition-all"
                   style={{ top: "15%", left: "36px" }}
                 >
                   <Linkedin size={20} />
                 </button>
                 <button
+                  onClick={() =>
+                    window.open("https://github.com/zrahadiz", "_blank")
+                  }
                   className="absolute btn btn-circle btn-ghost border border-white/20 hover:bg-white hover:text-slate-900 transition-all"
                   style={{ top: "35%", left: "42px" }}
                 >
                   <SiGithub size={20} />
                 </button>
                 <button
+                  onClick={() =>
+                    window.open("https://wa.me/628111107244", "_blank")
+                  }
                   className="absolute btn btn-circle btn-ghost border border-white/20 hover:bg-white hover:text-slate-900 transition-all"
                   style={{ top: "55%", left: "12px" }}
                 >
                   <SiWhatsapp size={20} />
                 </button>
                 <button
+                  onClick={() =>
+                    window.open("https://www.instagram.com/zrahadiz", "_blank")
+                  }
                   className="absolute btn btn-circle btn-ghost border border-white/20 hover:bg-white hover:text-slate-900 transition-all"
                   style={{ top: "75%", left: "10px" }}
                 >
