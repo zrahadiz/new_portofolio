@@ -155,7 +155,7 @@
       "title": "Dungeon and Dragons adventure",
       "category": "Web App",
       "description": "Dungeon and Dragons adventure is an online multiplayer D&D-style game where players create characters, join campaigns, and interact with an AI-powered Dungeon Master. Built with Next.js, Socket.IO, PostgreSQL, and Drizzle ORM, it delivers dynamic storytelling and synchronized real-time gameplay, with scalable deployment supported by Docker.",
-      "image": "projects/dnd/dnd1.png",
+      "image": "projects/dnd/dndLogo2.png",
       "tags": [
         "Next.JS",
         "Drizzle ORM",
@@ -176,7 +176,7 @@
             "Docker",
             "PostgreSQL"
           ],
-          "image": "projects/dnd/dnd1.png"
+          "image": "projects/dnd/dndLogo2.png"
         },
         {
           "heading": "Project Overview",
@@ -259,7 +259,7 @@
       "title": "TixPlaza",
       "category": "Web App",
       "description": "TixPlaza is an online ticket booking platform that allows users to browse, select, and purchase tickets for various events such as concerts, sports, and theater performances. Built with Nuxt.js, and MySql, TixPlaza offers a seamless user experience with real-time seat selection, secure payment processing, and personalized event recommendations.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "image": "projects/tixplaza/tixplazaLogo2.png",
       "tags": [
         "Nuxt.js",
         "Prisma",
@@ -284,7 +284,7 @@
             "Minio",
             "TailwindCSS"
           ],
-          "image": "projects/dnd/dnd1.png"
+          "image": "projects/tixplaza/tixplazaLogo2.png"
         },
         {
           "heading": "Overview",
@@ -377,7 +377,7 @@
       "title": "Moo Nonton",
       "category": "Web App",
       "description": "Moo Nonton is a simple movie streaming website built as a practice project to revisit the fundamentals of front-end development. After frequently relying on TailwindCSS, this project was intentionally created to relearn and strengthen core CSS skills. Developed using React.js and vanilla CSS, it features movie listings from various genres and includes a wishlist system managed with Redux. This project was completed as part of the Web Development course at the Korean ASEAN Digital Academy.",
-      "image": "projects/moononton/moononton2.png",
+      "image": "projects/moononton/moonontonLogo.png",
       "tags": [
         "ReactJS",
         "Vannila CSS",
@@ -394,7 +394,7 @@
             "Vannila CSS",
             "Redux"
           ],
-          "image": "projects/moononton/moononton2.png"
+          "image": "projects/moononton/moonontonLogo.png"
         },
         {
           "heading": "Project Overview",
@@ -474,7 +474,7 @@
       "title": "Math 4 Dumb",
       "category": "Web App",
       "description": "This web aims to help students from elementary school to high school in learning math easily and fun. Because, on this web the material will be presented interactively and students can create discussion threads when facing difficult material so that it can be answered by other users. This web is built with Vue.js and Tailwind for the front-end. Then, using Express.js as a backend endpoint and MySql for database storage where storage includes account storage, material bookmarks, and discussion posts. And account security has also used Bcrypt, JWT, and Cookies.",
-      "image": "projects/mathdumb/mathdumb1.png",
+      "image": "projects/mathdumb/mathdumbLogo2.png",
       "tags": [
         "Vue.js",
         "Tailwind",
@@ -499,7 +499,7 @@
             "Cookies",
             "MySql"
           ],
-          "image": "projects/mathdumb/mathdumb1.png"
+          "image": "projects/mathdumb/mathdumbLogo2.png"
         },
         {
           "heading": "Project Overview",
