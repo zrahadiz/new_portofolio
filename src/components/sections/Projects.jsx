@@ -176,7 +176,7 @@ export default function Projects() {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                    {/* <div className="absolute inset-0 bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
                       <Link
                         href={project.link}
                         className="btn btn-circle btn-sm bg-white text-slate-900 hover:bg-blue-500 hover:text-white"
@@ -191,7 +191,7 @@ export default function Projects() {
                       >
                         <SiGithub size={16} />
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Project Info */}
