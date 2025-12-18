@@ -113,15 +113,21 @@
             {
               "label": "Frontend",
               "tasks": [
-                "Built UI components",
-                "Integrated GraphQL"
+                "Developed responsive and intuitive user interfaces across the platform",
+                "Integrated frontend components with backend APIs for real-time data rendering and state updates",
+                "Implemented role-based views for HR, managers, and employees to deliver personalized user experiences",
+                "Built reusable UI components such as loaders, toast notifications, tables, and modal dialogs",
+                "Integrated Socket.IO on the client side to enable real-time collaboration on the Kanban board"
               ]
             },
             {
               "label": "Backend",
               "tasks": [
-                "Designed DB model",
-                "Created REST/GraphQL API"
+                "Designed and implemented role-based menu and access control APIs",
+                "Developed RESTful APIs to support core Kanban functionalities, including task creation, updates, assignment, and deletion",
+                "Implemented Socket.IO for real-time task updates and team collaboration features",
+                "Integrated WebSocket communication with task-related APIs to ensure live synchronization across clients",
+                "Collaborated with Hasnan to support the development of a Retrieval-Augmented Generation (RAG) system for matching the best-fit employees to projects"
               ]
             }
           ]
@@ -217,15 +223,23 @@
             {
               "label": "Frontend",
               "tasks": [
-                "Built UI components",
-                "Integrated GraphQL"
+                "Developed responsive and immersive user interfaces using Next.js",
+                "Implemented real-time gameplay interactions and updates via Socket.IO",
+                "Built character creation, campaign lobby, and in-game UI components",
+                "Managed client-side state for player actions, dice rolls, and combat flow",
+                "Integrated frontend with backend APIs for campaign, character, and session data",
+                "Ensured smooth user experience with loading states, error handling, and UI feedback"
               ]
             },
             {
               "label": "Backend",
               "tasks": [
-                "Designed DB model",
-                "Created REST/GraphQL API"
+                "Designed and implemented relational database schemas using PostgreSQL and Drizzle ORM",
+                "Developed backend APIs to handle campaigns, characters, sessions, and game events",
+                "Implemented real-time multiplayer communication using Socket.IO",
+                "Built AI-powered Dungeon Master logic for dynamic storytelling and event generation",
+                "Handled game state synchronization to ensure consistency across all connected players",
+                "Containerized the application using Docker for scalable and consistent deployment"
               ]
             }
           ]
@@ -327,23 +341,23 @@
             {
               "label": "Frontend",
               "tasks": [
-                "Developed responsive UI components using Nuxt.js and TailwindCSS",
-                "Implemented real-time seat selection interface with dynamic state updates",
-                "Integrated event browsing, filtering, and detailed event pages",
-                "Built user authentication flows and protected routes",
-                "Connected frontend pages with backend APIs using async data fetching",
-                "Created intuitive checkout flow with error handling and UX optimizations"
+                "Developed responsive and accessible user interfaces using Nuxt.js and TailwindCSS",
+                "Implemented event listing, search, filtering, and detailed event pages",
+                "Built real-time seat selection UI with dynamic state updates",
+                "Integrated secure checkout flow with clear validation and error handling",
+                "Connected frontend features with backend APIs for ticket availability and transactions",
+                "Optimized user experience across desktop and mobile devices"
               ]
             },
             {
               "label": "Backend",
               "tasks": [
-                "Designed and structured the database schema using Prisma and MySQL",
-                "Implemented REST APIs for events, seats, bookings, and users",
-                "Integrated secure payment processing using Xendit",
-                "Developed real-time seat locking logic to prevent overbooking",
-                "Handled file storage for event banners and assets using Minio",
-                "Containerized the backend environment using Docker for consistent deployment"
+                "Designed and implemented relational database schemas using Prisma and MySQL",
+                "Developed RESTful APIs for events, tickets, orders, and user management",
+                "Integrated Xendit payment gateway for secure and reliable transaction processing",
+                "Implemented transaction validation and ticket reservation logic to prevent double booking",
+                "Handled media asset storage and retrieval using MinIO",
+                "Containerized the application using Docker to support consistent deployment and scalability"
               ]
             }
           ]
@@ -351,23 +365,15 @@
         {
           "heading": "Key Features",
           "list": [
+            "Browse and discover events across concerts, sports, and theater categories",
             "Real-time seat selection with live availability updates",
-            "Secure online payment processing with multiple payment methods",
-            "Personalized event recommendations powered by user preferences",
-            "Advanced search and filtering for concerts, sports, and theater events",
-            "User-friendly Nuxt.js interface with fast and responsive performance",
-            "Order history and e-ticket management for seamless user access",
-            "Admin dashboard for event management, pricing, and ticket inventory",
-            "MySQL-backed data storage ensuring reliability and scalability"
-          ]
-        },
-        {
-          "heading": "TixPlaza",
-          "text": "Here are final UI designs and previews.",
-          "imgUrl": [
-            "projects/dnd/dnd1.png",
-            "projects/dnd/dnd2.png",
-            "projects/dnd/dnd3.png"
+            "Secure ticket purchasing with Xendit payment gateway integration",
+            "Personalized event recommendations based on user preferences and behavior",
+            "Responsive and fast user interface built with Nuxt.js and TailwindCSS",
+            "Digital ticket management with order history and transaction tracking",
+            "Scalable backend architecture using Prisma ORM and MySQL",
+            "Media and asset storage for events using MinIO object storage",
+            "Dockerized application for consistent deployment and scalability"
           ]
         }
       ]
